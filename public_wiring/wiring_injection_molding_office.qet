@@ -1,252 +1,523 @@
 <project version="0.90" title="untitled">
     <properties>
-        <property name="saveddate-eu" show="1">23-01-2026</property>
-        <property name="saveddate-us" show="1">2026-01-23</property>
-        <property name="savedfilename" show="1">untitled</property>
-        <property name="savedtime" show="1">08:32</property>
-        <property name="savedfilepath" show="1">C:/Users/plamendimitrov/Desktop/untitled.qet</property>
-        <property name="saveddate" show="1">23.1.2026 г.</property>
+        <property show="1" name="saveddate">26.1.2026 г.</property>
+        <property show="1" name="savedfilename">wiring_injection_molding_office</property>
+        <property show="1" name="saveddate-us">2026-01-26</property>
+        <property show="1" name="saveddate-eu">26-01-2026</property>
+        <property show="1" name="savedfilepath">H:/Infrastructure/public_wiring/wiring_injection_molding_office.qet</property>
+        <property show="1" name="savedtime">14:51</property>
     </properties>
     <newdiagrams>
-        <border displayrows="true" cols="17" displaycols="true" colsize="60" rowsize="80" rows="8"/>
-        <inset locmach="" version="" date="null" displayAt="bottom" title="" indexrev="" filename="" author="" plant="" auto_page_num="" folio="%id/%total"/>
-        <conductors conductor_section="" bus="" color2="#000000" condsize="1" horizontal-alignment="AlignBottom" type="multi" num="_" displaytext="1" bicolor="false" function="" onetextperfolio="0" formula="" cable="" vertical-alignment="AlignRight" horizrotatetext="0" text_color="#000000" numsize="7" conductor_color="" vertirotatetext="270" tension_protocol="" dash-size="1"/>
+        <border colsize="60" rows="8" displaycols="true" rowsize="80" displayrows="true" cols="17"/>
+        <inset displayAt="bottom" author="" plant="" indexrev="" version="" date="null" folio="%id/%total" auto_page_num="" title="" filename="" locmach=""/>
+        <conductors condsize="1" onetextperfolio="0" text_color="#000000" vertirotatetext="270" bus="" function="" formula="" bicolor="false" dash-size="1" cable="" horizontal-alignment="AlignBottom" vertical-alignment="AlignRight" tension_protocol="" numsize="7" conductor_section="" color2="#000000" num="_" horizrotatetext="0" conductor_color="" type="multi" displaytext="1"/>
         <report label="%f-%l%c"/>
         <xrefs>
-            <xref type="protection" showpowerctc="true" snapto="label" slave_label="(%f-%l%c)" switchprefix="" powerprefix="" master_label="%f-%l%c" delayprefix="" displayhas="cross" offset="0" xrefpos=""/>
-            <xref type="coil" showpowerctc="true" snapto="label" slave_label="(%f-%l%c)" switchprefix="" powerprefix="" master_label="%f-%l%c" delayprefix="" displayhas="cross" offset="0" xrefpos=""/>
-            <xref type="commutator" showpowerctc="true" snapto="label" slave_label="(%f-%l%c)" switchprefix="" powerprefix="" master_label="%f-%l%c" delayprefix="" displayhas="cross" offset="0" xrefpos=""/>
+            <xref snapto="label" powerprefix="" showpowerctc="true" xrefpos="" switchprefix="" type="coil" master_label="%f-%l%c" slave_label="(%f-%l%c)" delayprefix="" offset="0" displayhas="cross"/>
+            <xref snapto="label" powerprefix="" showpowerctc="true" xrefpos="" switchprefix="" type="protection" master_label="%f-%l%c" slave_label="(%f-%l%c)" delayprefix="" offset="0" displayhas="cross"/>
+            <xref snapto="label" powerprefix="" showpowerctc="true" xrefpos="" switchprefix="" type="commutator" master_label="%f-%l%c" slave_label="(%f-%l%c)" delayprefix="" offset="0" displayhas="cross"/>
         </xrefs>
         <conductors_autonums freeze_new_conductors="false" current_autonum=""/>
         <folio_autonums/>
-        <element_autonums current_autonum="" freeze_new_elements="false"/>
+        <element_autonums freeze_new_elements="false" current_autonum=""/>
     </newdiagrams>
-    <diagram height="820" plant="" order="1" cols="18" displayrows="true" date="null" version="0.90+c7891bc4cb0a58100c957a06d79751d3" locmach="" displaycols="true" freezeNewElement="false" title="" indexrev="" rowsize="80" author="" rows="10" auto_page_num="" displayAt="bottom" colsize="60" freezeNewConductor="false" filename="" folio="%id/%total">
-        <defaultconductor conductor_section="" bus="" color2="#000000" condsize="1" horizontal-alignment="AlignBottom" type="multi" num="_" displaytext="1" bicolor="false" function="" onetextperfolio="0" formula="" vertical-alignment="AlignRight" cable="" horizrotatetext="0" text_color="#000000" numsize="7" conductor_color="" vertirotatetext="270" tension_protocol="" dash-size="1"/>
+    <diagram cols="18" rowsize="80" locmach="" plant="" colsize="60" displayrows="true" freezeNewConductor="false" filename="" author="" height="820" version="0.90+c7891bc4cb0a58100c957a06d79751d3" date="null" order="1" folio="%id/%total" title="" displayAt="bottom" indexrev="" auto_page_num="Create an auto folio numbering" freezeNewElement="false" rows="10" displaycols="true">
+        <defaultconductor condsize="1" onetextperfolio="0" text_color="#000000" vertirotatetext="270" bus="" function="" formula="" bicolor="false" dash-size="2" cable="" horizontal-alignment="AlignBottom" vertical-alignment="AlignRight" tension_protocol="" numsize="7" conductor_section="" color2="#000000" num="_" horizrotatetext="0" conductor_color="" type="multi" displaytext="1"/>
         <elements>
-            <element prefix="S" freezeLabel="false" type="embed://import/10_electric/10_allpole/310_relays_contactors_contacts/02_contacts_cross_referencing/15_protection_contacts/contact_fusile_nc_esclave.elmt" x="740" uuid="{5ba58a65-1be6-4331-b7bc-4ac27ad9fa7b}" z="10" orientation="0" y="330">
+            <element freezeLabel="false" orientation="0" uuid="{4745bbd3-6d4a-4b6f-b320-b95c9ceacbfb}" x="510" y="280" type="embed://import/10_electric/10_allpole/114_connections/bod.elmt" prefix="" z="10">
                 <terminals>
-                    <terminal x="0" orientation="0" id="0" y="-16"/>
-                    <terminal x="0" orientation="2" id="1" y="16"/>
+                    <terminal orientation="0" x="0" id="0" y="2"/>
+                    <terminal orientation="3" x="2" id="1" y="0"/>
+                    <terminal orientation="1" x="-2" id="2" y="0"/>
+                    <terminal orientation="2" x="0" id="3" y="-2"/>
                 </terminals>
                 <inputs/>
+                <elementInformations>
+                    <elementInformation show="1" name="formula"></elementInformation>
+                </elementInformations>
                 <dynamic_texts>
-                    <dynamic_elmt_text rotation="0" keep_visual_rotation="true" x="-13" Halignment="AlignLeft" Valignment="AlignTop" uuid="{a701877c-3dd6-4e40-9d15-754feb4d627a}" text_from="UserText" frame="false" y="8.5" text_width="-1" font="Sans Serif,4,-1,5,0,0,0,0,0,0,normal">
-                        <text>12</text>
-                    </dynamic_elmt_text>
-                    <dynamic_elmt_text rotation="0" keep_visual_rotation="true" x="-13" Halignment="AlignLeft" Valignment="AlignTop" uuid="{bcf9ec62-9870-4d33-be28-d9608c0b7a7b}" text_from="UserText" frame="false" y="-23.5" text_width="-1" font="Sans Serif,4,-1,5,0,0,0,0,0,0,normal">
-                        <text>11</text>
-                    </dynamic_elmt_text>
-                    <dynamic_elmt_text rotation="0" keep_visual_rotation="true" x="8" Halignment="AlignLeft" Valignment="AlignTop" uuid="{86b7d54d-acbe-4f6d-9eb0-9e33c0f09960}" text_from="ElementInfo" frame="false" y="-11" text_width="-1" font="Sans Serif,9,-1,5,0,0,0,0,0,0,normal">
-                        <text>_</text>
+                    <dynamic_elmt_text font="Sans Serif,9,-1,5,50,0,0,0,0,0" rotation="0" text_from="ElementInfo" uuid="{690eb80e-e5d0-445d-a74d-da852c03be52}" Halignment="AlignLeft" x="-11" y="-14.5" frame="false" text_width="-1" Valignment="AlignTop" keep_visual_rotation="false">
+                        <text></text>
                         <info_name>label</info_name>
                     </dynamic_elmt_text>
                 </dynamic_texts>
                 <texts_groups/>
             </element>
-            <element prefix="S" freezeLabel="false" type="embed://import/10_electric/10_allpole/310_relays_contactors_contacts/02_contacts_cross_referencing/15_protection_contacts/contact_fusile_nc_esclave.elmt" x="410" uuid="{220175a0-a780-42cf-96e1-0cb6c454bd2e}" z="10" orientation="0" y="200">
+            <element freezeLabel="false" orientation="0" uuid="{b43de3b1-fe38-4d2f-92f1-5e36d6c12577}" x="740" y="240" type="embed://import/10_electric/10_allpole/114_connections/bod.elmt" prefix="" z="10">
                 <terminals>
-                    <terminal x="0" orientation="0" id="2" y="-16"/>
-                    <terminal x="0" orientation="2" id="3" y="16"/>
+                    <terminal orientation="0" x="0" id="4" y="2"/>
+                    <terminal orientation="3" x="2" id="5" y="0"/>
+                    <terminal orientation="1" x="-2" id="6" y="0"/>
+                    <terminal orientation="2" x="0" id="7" y="-2"/>
                 </terminals>
                 <inputs/>
+                <elementInformations>
+                    <elementInformation show="1" name="formula"></elementInformation>
+                </elementInformations>
                 <dynamic_texts>
-                    <dynamic_elmt_text rotation="0" keep_visual_rotation="true" x="-13" Halignment="AlignLeft" Valignment="AlignTop" uuid="{2f8f7a20-ce8d-4e6c-9649-e825b3cefe33}" text_from="UserText" frame="false" y="8.5" text_width="-1" font="Sans Serif,4,-1,5,0,0,0,0,0,0,normal">
-                        <text>12</text>
-                    </dynamic_elmt_text>
-                    <dynamic_elmt_text rotation="0" keep_visual_rotation="true" x="-13" Halignment="AlignLeft" Valignment="AlignTop" uuid="{86d0e752-624d-4711-9d93-507a486e8b5d}" text_from="UserText" frame="false" y="-23.5" text_width="-1" font="Sans Serif,4,-1,5,0,0,0,0,0,0,normal">
-                        <text>11</text>
-                    </dynamic_elmt_text>
-                    <dynamic_elmt_text rotation="0" keep_visual_rotation="true" x="0" Halignment="AlignLeft" Valignment="AlignTop" uuid="{ccbff571-b31c-4497-98f9-ca3c5fd26b7d}" text_from="ElementInfo" frame="false" y="-10" text_width="-1" font="Sans Serif,9,-1,5,0,0,0,0,0,0,normal">
-                        <text>_</text>
+                    <dynamic_elmt_text font="Sans Serif,9,-1,5,50,0,0,0,0,0" rotation="0" text_from="ElementInfo" uuid="{c8175fed-214f-43f9-8f3e-38d6a7f6264f}" Halignment="AlignLeft" x="-11" y="-14.5" frame="false" text_width="-1" Valignment="AlignTop" keep_visual_rotation="false">
+                        <text></text>
                         <info_name>label</info_name>
                     </dynamic_elmt_text>
                 </dynamic_texts>
                 <texts_groups/>
             </element>
-            <element prefix="S" freezeLabel="false" type="embed://import/10_electric/10_allpole/310_relays_contactors_contacts/02_contacts_cross_referencing/15_protection_contacts/contact_fusile_nc_esclave.elmt" x="600" uuid="{be441827-a14e-4b81-a683-4d7c4568c488}" z="10" orientation="0" y="330">
+            <element freezeLabel="false" orientation="0" uuid="{18bd4b77-85b3-4677-b414-be855a99f017}" x="620" y="260" type="embed://import/10_electric/10_allpole/114_connections/bod.elmt" prefix="" z="10">
                 <terminals>
-                    <terminal x="0" orientation="0" id="4" y="-16"/>
-                    <terminal x="0" orientation="2" id="5" y="16"/>
+                    <terminal orientation="0" x="0" id="8" y="2"/>
+                    <terminal orientation="3" x="2" id="9" y="0"/>
+                    <terminal orientation="1" x="-2" id="10" y="0"/>
+                    <terminal orientation="2" x="0" id="11" y="-2"/>
                 </terminals>
                 <inputs/>
+                <elementInformations>
+                    <elementInformation show="1" name="formula"></elementInformation>
+                </elementInformations>
                 <dynamic_texts>
-                    <dynamic_elmt_text rotation="0" keep_visual_rotation="true" x="-13" Halignment="AlignLeft" Valignment="AlignTop" uuid="{b6e9ba5b-1be1-4098-9851-06254c1a9299}" text_from="UserText" frame="false" y="8.5" text_width="-1" font="Sans Serif,4,-1,5,0,0,0,0,0,0,normal">
-                        <text>12</text>
-                    </dynamic_elmt_text>
-                    <dynamic_elmt_text rotation="0" keep_visual_rotation="true" x="-13" Halignment="AlignLeft" Valignment="AlignTop" uuid="{fa1e8407-0f9f-4c48-97f4-b77690bb4f5b}" text_from="UserText" frame="false" y="-23.5" text_width="-1" font="Sans Serif,4,-1,5,0,0,0,0,0,0,normal">
-                        <text>11</text>
-                    </dynamic_elmt_text>
-                    <dynamic_elmt_text rotation="0" keep_visual_rotation="true" x="8" Halignment="AlignLeft" Valignment="AlignTop" uuid="{52fb7a7b-d879-43c9-bf94-9a28c832d6a6}" text_from="ElementInfo" frame="false" y="-11" text_width="-1" font="Sans Serif,9,-1,5,0,0,0,0,0,0,normal">
-                        <text>_</text>
+                    <dynamic_elmt_text font="Sans Serif,9,-1,5,50,0,0,0,0,0" rotation="0" text_from="ElementInfo" uuid="{2c6bcfc8-3213-4449-a805-1b0d483b05fb}" Halignment="AlignLeft" x="-11" y="-14.5" frame="false" text_width="-1" Valignment="AlignTop" keep_visual_rotation="false">
+                        <text></text>
                         <info_name>label</info_name>
                     </dynamic_elmt_text>
                 </dynamic_texts>
                 <texts_groups/>
             </element>
-            <element prefix="S" freezeLabel="false" type="embed://import/10_electric/10_allpole/310_relays_contactors_contacts/02_contacts_cross_referencing/15_protection_contacts/contact_fusile_nc_esclave.elmt" x="470" uuid="{47ee0e2b-7e08-4f5c-85fb-0e6acd98d8c2}" z="10" orientation="0" y="330">
+            <element freezeLabel="false" orientation="0" uuid="{220175a0-a780-42cf-96e1-0cb6c454bd2e}" x="410" y="200" type="embed://import/10_electric/10_allpole/310_relays_contactors_contacts/02_contacts_cross_referencing/15_protection_contacts/contact_fusile_nc_esclave.elmt" prefix="S" z="10">
                 <terminals>
-                    <terminal x="0" orientation="0" id="6" y="-16"/>
-                    <terminal x="0" orientation="2" id="7" y="16"/>
+                    <terminal orientation="0" x="0" id="12" y="-16"/>
+                    <terminal orientation="2" x="0" id="13" y="16"/>
                 </terminals>
                 <inputs/>
                 <dynamic_texts>
-                    <dynamic_elmt_text rotation="0" keep_visual_rotation="true" x="-13" Halignment="AlignLeft" Valignment="AlignTop" uuid="{8781c00e-6ada-443c-8d70-44cffaf9eccd}" text_from="UserText" frame="false" y="8.5" text_width="-1" font="Sans Serif,4,-1,5,0,0,0,0,0,0,normal">
+                    <dynamic_elmt_text font="Sans Serif,4,-1,5,0,0,0,0,0,0,normal" rotation="0" text_from="UserText" uuid="{2f8f7a20-ce8d-4e6c-9649-e825b3cefe33}" Halignment="AlignLeft" x="-13" y="8.5" frame="false" text_width="-1" Valignment="AlignTop" keep_visual_rotation="true">
                         <text>12</text>
                     </dynamic_elmt_text>
-                    <dynamic_elmt_text rotation="0" keep_visual_rotation="true" x="-13" Halignment="AlignLeft" Valignment="AlignTop" uuid="{38645f31-8bdf-4ce6-bfdb-34cf21694758}" text_from="UserText" frame="false" y="-23.5" text_width="-1" font="Sans Serif,4,-1,5,0,0,0,0,0,0,normal">
+                    <dynamic_elmt_text font="Sans Serif,4,-1,5,0,0,0,0,0,0,normal" rotation="0" text_from="UserText" uuid="{86d0e752-624d-4711-9d93-507a486e8b5d}" Halignment="AlignLeft" x="-13" y="-23.5" frame="false" text_width="-1" Valignment="AlignTop" keep_visual_rotation="true">
                         <text>11</text>
                     </dynamic_elmt_text>
-                    <dynamic_elmt_text rotation="0" keep_visual_rotation="true" x="8" Halignment="AlignLeft" Valignment="AlignTop" uuid="{d55164df-b1a3-4cd1-857f-f4fcfb28698b}" text_from="ElementInfo" frame="false" y="-11" text_width="-1" font="Sans Serif,9,-1,5,0,0,0,0,0,0,normal">
-                        <text>_</text>
+                    <dynamic_elmt_text font="Sans Serif,9,-1,5,0,0,0,0,0,0,normal" rotation="0" text_from="ElementInfo" uuid="{ccbff571-b31c-4497-98f9-ca3c5fd26b7d}" Halignment="AlignLeft" x="0" y="-10" frame="false" text_width="-1" Valignment="AlignTop" keep_visual_rotation="true">
+                        <text></text>
+                        <info_name>label</info_name>
+                    </dynamic_elmt_text>
+                </dynamic_texts>
+                <texts_groups/>
+            </element>
+            <element freezeLabel="false" orientation="0" uuid="{e50a55eb-310a-4cbb-b13e-cae3ccb4f6e3}" x="780" y="280" type="embed://import/10_electric/10_allpole/114_connections/bod.elmt" prefix="" z="10">
+                <terminals>
+                    <terminal orientation="0" x="0" id="14" y="2"/>
+                    <terminal orientation="3" x="2" id="15" y="0"/>
+                    <terminal orientation="1" x="-2" id="16" y="0"/>
+                    <terminal orientation="2" x="0" id="17" y="-2"/>
+                </terminals>
+                <inputs/>
+                <elementInformations>
+                    <elementInformation show="1" name="formula"></elementInformation>
+                </elementInformations>
+                <dynamic_texts>
+                    <dynamic_elmt_text font="Sans Serif,9,-1,5,50,0,0,0,0,0" rotation="0" text_from="ElementInfo" uuid="{d37565e4-bca6-411f-81ff-a3b8ae495a89}" Halignment="AlignLeft" x="-11" y="-14.5" frame="false" text_width="-1" Valignment="AlignTop" keep_visual_rotation="false">
+                        <text></text>
+                        <info_name>label</info_name>
+                    </dynamic_elmt_text>
+                </dynamic_texts>
+                <texts_groups/>
+            </element>
+            <element freezeLabel="false" orientation="0" uuid="{0e295542-ba7a-4017-a85f-4b0e3c6d1bcb}" x="760" y="260" type="embed://import/10_electric/10_allpole/114_connections/bod.elmt" prefix="" z="10">
+                <terminals>
+                    <terminal orientation="0" x="0" id="18" y="2"/>
+                    <terminal orientation="3" x="2" id="19" y="0"/>
+                    <terminal orientation="1" x="-2" id="20" y="0"/>
+                    <terminal orientation="2" x="0" id="21" y="-2"/>
+                </terminals>
+                <inputs/>
+                <elementInformations>
+                    <elementInformation show="1" name="formula"></elementInformation>
+                </elementInformations>
+                <dynamic_texts>
+                    <dynamic_elmt_text font="Sans Serif,9,-1,5,50,0,0,0,0,0" rotation="0" text_from="ElementInfo" uuid="{bcb457a9-ffac-4bd1-86cd-d0ef92a4feea}" Halignment="AlignLeft" x="-11" y="-14.5" frame="false" text_width="-1" Valignment="AlignTop" keep_visual_rotation="false">
+                        <text></text>
+                        <info_name>label</info_name>
+                    </dynamic_elmt_text>
+                </dynamic_texts>
+                <texts_groups/>
+            </element>
+            <element freezeLabel="false" orientation="0" uuid="{956a00f1-2243-48b5-abff-ec58d087dc74}" x="640" y="280" type="embed://import/10_electric/10_allpole/114_connections/bod.elmt" prefix="" z="10">
+                <terminals>
+                    <terminal orientation="0" x="0" id="22" y="2"/>
+                    <terminal orientation="3" x="2" id="23" y="0"/>
+                    <terminal orientation="1" x="-2" id="24" y="0"/>
+                    <terminal orientation="2" x="0" id="25" y="-2"/>
+                </terminals>
+                <inputs/>
+                <elementInformations>
+                    <elementInformation show="1" name="formula"></elementInformation>
+                </elementInformations>
+                <dynamic_texts>
+                    <dynamic_elmt_text font="Sans Serif,9,-1,5,50,0,0,0,0,0" rotation="0" text_from="ElementInfo" uuid="{ddb81807-ea16-4129-8fcf-93713776fc6c}" Halignment="AlignLeft" x="-11" y="-14.5" frame="false" text_width="-1" Valignment="AlignTop" keep_visual_rotation="false">
+                        <text></text>
+                        <info_name>label</info_name>
+                    </dynamic_elmt_text>
+                </dynamic_texts>
+                <texts_groups/>
+            </element>
+            <element freezeLabel="false" orientation="0" uuid="{62073545-c5be-45a2-9961-4cd5e724fb62}" x="410" y="240" type="embed://import/10_electric/10_allpole/114_connections/bod.elmt" prefix="" z="10">
+                <terminals>
+                    <terminal orientation="0" x="0" id="26" y="2"/>
+                    <terminal orientation="3" x="2" id="27" y="0"/>
+                    <terminal orientation="1" x="-2" id="28" y="0"/>
+                    <terminal orientation="2" x="0" id="29" y="-2"/>
+                </terminals>
+                <inputs/>
+                <elementInformations>
+                    <elementInformation show="1" name="formula"></elementInformation>
+                </elementInformations>
+                <dynamic_texts>
+                    <dynamic_elmt_text font="Sans Serif,9,-1,5,50,0,0,0,0,0" rotation="0" text_from="ElementInfo" uuid="{1ecaf59d-bd76-4ecf-9edc-6b0f9986ad24}" Halignment="AlignLeft" x="-11" y="-14.5" frame="false" text_width="-1" Valignment="AlignTop" keep_visual_rotation="false">
+                        <text></text>
+                        <info_name>label</info_name>
+                    </dynamic_elmt_text>
+                </dynamic_texts>
+                <texts_groups/>
+            </element>
+            <element freezeLabel="false" orientation="0" uuid="{f0b5799f-9263-466d-af28-7a3d301fda8b}" x="450" y="280" type="embed://import/10_electric/10_allpole/114_connections/bod.elmt" prefix="" z="10">
+                <terminals>
+                    <terminal orientation="0" x="0" id="30" y="2"/>
+                    <terminal orientation="3" x="2" id="31" y="0"/>
+                    <terminal orientation="1" x="-2" id="32" y="0"/>
+                    <terminal orientation="2" x="0" id="33" y="-2"/>
+                </terminals>
+                <inputs/>
+                <elementInformations>
+                    <elementInformation show="1" name="formula"></elementInformation>
+                </elementInformations>
+                <dynamic_texts>
+                    <dynamic_elmt_text font="Sans Serif,9,-1,5,50,0,0,0,0,0" rotation="0" text_from="ElementInfo" uuid="{0cc126d0-c6c1-4a40-826a-6a7f3e186d8e}" Halignment="AlignLeft" x="-11" y="-14.5" frame="false" text_width="-1" Valignment="AlignTop" keep_visual_rotation="false">
+                        <text></text>
+                        <info_name>label</info_name>
+                    </dynamic_elmt_text>
+                </dynamic_texts>
+                <texts_groups/>
+            </element>
+            <element freezeLabel="false" orientation="0" uuid="{5692e5ef-4313-40d8-86f8-50c7a6c64ac6}" x="470" y="240" type="embed://import/10_electric/10_allpole/114_connections/bod.elmt" prefix="" z="10">
+                <terminals>
+                    <terminal orientation="0" x="0" id="34" y="2"/>
+                    <terminal orientation="3" x="2" id="35" y="0"/>
+                    <terminal orientation="1" x="-2" id="36" y="0"/>
+                    <terminal orientation="2" x="0" id="37" y="-2"/>
+                </terminals>
+                <inputs/>
+                <elementInformations>
+                    <elementInformation show="1" name="formula"></elementInformation>
+                </elementInformations>
+                <dynamic_texts>
+                    <dynamic_elmt_text font="Sans Serif,9,-1,5,50,0,0,0,0,0" rotation="0" text_from="ElementInfo" uuid="{aa3dedd1-eac7-4f67-ac4c-320ed08a6c55}" Halignment="AlignLeft" x="-11" y="-14.5" frame="false" text_width="-1" Valignment="AlignTop" keep_visual_rotation="false">
+                        <text></text>
+                        <info_name>label</info_name>
+                    </dynamic_elmt_text>
+                </dynamic_texts>
+                <texts_groups/>
+            </element>
+            <element freezeLabel="false" orientation="0" uuid="{01eb4e14-44ed-45b7-9888-f3f30e47ce0c}" x="490" y="260" type="embed://import/10_electric/10_allpole/114_connections/bod.elmt" prefix="" z="10">
+                <terminals>
+                    <terminal orientation="0" x="0" id="38" y="2"/>
+                    <terminal orientation="3" x="2" id="39" y="0"/>
+                    <terminal orientation="1" x="-2" id="40" y="0"/>
+                    <terminal orientation="2" x="0" id="41" y="-2"/>
+                </terminals>
+                <inputs/>
+                <elementInformations>
+                    <elementInformation show="1" name="formula"></elementInformation>
+                </elementInformations>
+                <dynamic_texts>
+                    <dynamic_elmt_text font="Sans Serif,9,-1,5,50,0,0,0,0,0" rotation="0" text_from="ElementInfo" uuid="{bddddfef-df9e-4f95-8a69-118a70f0cc36}" Halignment="AlignLeft" x="-11" y="-14.5" frame="false" text_width="-1" Valignment="AlignTop" keep_visual_rotation="false">
+                        <text></text>
+                        <info_name>label</info_name>
+                    </dynamic_elmt_text>
+                </dynamic_texts>
+                <texts_groups/>
+            </element>
+            <element freezeLabel="false" orientation="0" uuid="{bc973eea-a533-4607-8c5d-e91e1bf381b7}" x="600" y="240" type="embed://import/10_electric/10_allpole/114_connections/bod.elmt" prefix="" z="10">
+                <terminals>
+                    <terminal orientation="0" x="0" id="42" y="2"/>
+                    <terminal orientation="3" x="2" id="43" y="0"/>
+                    <terminal orientation="1" x="-2" id="44" y="0"/>
+                    <terminal orientation="2" x="0" id="45" y="-2"/>
+                </terminals>
+                <inputs/>
+                <elementInformations>
+                    <elementInformation show="1" name="formula"></elementInformation>
+                </elementInformations>
+                <dynamic_texts>
+                    <dynamic_elmt_text font="Sans Serif,9,-1,5,50,0,0,0,0,0" rotation="0" text_from="ElementInfo" uuid="{ea94877d-0f4b-44ba-aa4b-f45b6ef54266}" Halignment="AlignLeft" x="-11" y="-14.5" frame="false" text_width="-1" Valignment="AlignTop" keep_visual_rotation="false">
+                        <text></text>
+                        <info_name>label</info_name>
+                    </dynamic_elmt_text>
+                </dynamic_texts>
+                <texts_groups/>
+            </element>
+            <element freezeLabel="false" orientation="0" uuid="{47ee0e2b-7e08-4f5c-85fb-0e6acd98d8c2}" x="470" y="330" type="embed://import/10_electric/10_allpole/310_relays_contactors_contacts/02_contacts_cross_referencing/15_protection_contacts/contact_fusile_nc_esclave.elmt" prefix="S" z="10">
+                <terminals>
+                    <terminal orientation="0" x="0" id="46" y="-16"/>
+                    <terminal orientation="2" x="0" id="47" y="16"/>
+                </terminals>
+                <inputs/>
+                <dynamic_texts>
+                    <dynamic_elmt_text font="Sans Serif,4,-1,5,0,0,0,0,0,0,normal" rotation="0" text_from="UserText" uuid="{8781c00e-6ada-443c-8d70-44cffaf9eccd}" Halignment="AlignLeft" x="-13" y="8.5" frame="false" text_width="-1" Valignment="AlignTop" keep_visual_rotation="true">
+                        <text>12</text>
+                    </dynamic_elmt_text>
+                    <dynamic_elmt_text font="Sans Serif,4,-1,5,0,0,0,0,0,0,normal" rotation="0" text_from="UserText" uuid="{38645f31-8bdf-4ce6-bfdb-34cf21694758}" Halignment="AlignLeft" x="-13" y="-23.5" frame="false" text_width="-1" Valignment="AlignTop" keep_visual_rotation="true">
+                        <text>11</text>
+                    </dynamic_elmt_text>
+                    <dynamic_elmt_text font="Sans Serif,9,-1,5,0,0,0,0,0,0,normal" rotation="0" text_from="ElementInfo" uuid="{d55164df-b1a3-4cd1-857f-f4fcfb28698b}" Halignment="AlignLeft" x="8" y="-11" frame="false" text_width="-1" Valignment="AlignTop" keep_visual_rotation="true">
+                        <text></text>
+                        <info_name>label</info_name>
+                    </dynamic_elmt_text>
+                </dynamic_texts>
+                <texts_groups/>
+            </element>
+            <element freezeLabel="false" orientation="0" uuid="{be441827-a14e-4b81-a683-4d7c4568c488}" x="600" y="330" type="embed://import/10_electric/10_allpole/310_relays_contactors_contacts/02_contacts_cross_referencing/15_protection_contacts/contact_fusile_nc_esclave.elmt" prefix="S" z="10">
+                <terminals>
+                    <terminal orientation="0" x="0" id="48" y="-16"/>
+                    <terminal orientation="2" x="0" id="49" y="16"/>
+                </terminals>
+                <inputs/>
+                <dynamic_texts>
+                    <dynamic_elmt_text font="Sans Serif,4,-1,5,0,0,0,0,0,0,normal" rotation="0" text_from="UserText" uuid="{b6e9ba5b-1be1-4098-9851-06254c1a9299}" Halignment="AlignLeft" x="-13" y="8.5" frame="false" text_width="-1" Valignment="AlignTop" keep_visual_rotation="true">
+                        <text>12</text>
+                    </dynamic_elmt_text>
+                    <dynamic_elmt_text font="Sans Serif,4,-1,5,0,0,0,0,0,0,normal" rotation="0" text_from="UserText" uuid="{fa1e8407-0f9f-4c48-97f4-b77690bb4f5b}" Halignment="AlignLeft" x="-13" y="-23.5" frame="false" text_width="-1" Valignment="AlignTop" keep_visual_rotation="true">
+                        <text>11</text>
+                    </dynamic_elmt_text>
+                    <dynamic_elmt_text font="Sans Serif,9,-1,5,0,0,0,0,0,0,normal" rotation="0" text_from="ElementInfo" uuid="{52fb7a7b-d879-43c9-bf94-9a28c832d6a6}" Halignment="AlignLeft" x="8" y="-11" frame="false" text_width="-1" Valignment="AlignTop" keep_visual_rotation="true">
+                        <text></text>
+                        <info_name>label</info_name>
+                    </dynamic_elmt_text>
+                </dynamic_texts>
+                <texts_groups/>
+            </element>
+            <element freezeLabel="false" orientation="0" uuid="{5ba58a65-1be6-4331-b7bc-4ac27ad9fa7b}" x="740" y="330" type="embed://import/10_electric/10_allpole/310_relays_contactors_contacts/02_contacts_cross_referencing/15_protection_contacts/contact_fusile_nc_esclave.elmt" prefix="S" z="10">
+                <terminals>
+                    <terminal orientation="0" x="0" id="50" y="-16"/>
+                    <terminal orientation="2" x="0" id="51" y="16"/>
+                </terminals>
+                <inputs/>
+                <dynamic_texts>
+                    <dynamic_elmt_text font="Sans Serif,4,-1,5,0,0,0,0,0,0,normal" rotation="0" text_from="UserText" uuid="{a701877c-3dd6-4e40-9d15-754feb4d627a}" Halignment="AlignLeft" x="-13" y="8.5" frame="false" text_width="-1" Valignment="AlignTop" keep_visual_rotation="true">
+                        <text>12</text>
+                    </dynamic_elmt_text>
+                    <dynamic_elmt_text font="Sans Serif,4,-1,5,0,0,0,0,0,0,normal" rotation="0" text_from="UserText" uuid="{bcf9ec62-9870-4d33-be28-d9608c0b7a7b}" Halignment="AlignLeft" x="-13" y="-23.5" frame="false" text_width="-1" Valignment="AlignTop" keep_visual_rotation="true">
+                        <text>11</text>
+                    </dynamic_elmt_text>
+                    <dynamic_elmt_text font="Sans Serif,9,-1,5,0,0,0,0,0,0,normal" rotation="0" text_from="ElementInfo" uuid="{86b7d54d-acbe-4f6d-9eb0-9e33c0f09960}" Halignment="AlignLeft" x="8" y="-11" frame="false" text_width="-1" Valignment="AlignTop" keep_visual_rotation="true">
+                        <text></text>
+                        <info_name>label</info_name>
+                    </dynamic_elmt_text>
+                </dynamic_texts>
+                <texts_groups/>
+            </element>
+            <element freezeLabel="false" orientation="0" uuid="{86221ac7-490c-4ec1-a741-1cb9a9436d08}" x="430" y="260" type="embed://import/10_electric/10_allpole/114_connections/bod.elmt" prefix="" z="10">
+                <terminals>
+                    <terminal orientation="0" x="0" id="52" y="2"/>
+                    <terminal orientation="3" x="2" id="53" y="0"/>
+                    <terminal orientation="1" x="-2" id="54" y="0"/>
+                    <terminal orientation="2" x="0" id="55" y="-2"/>
+                </terminals>
+                <inputs/>
+                <elementInformations>
+                    <elementInformation show="1" name="formula"></elementInformation>
+                </elementInformations>
+                <dynamic_texts>
+                    <dynamic_elmt_text font="Sans Serif,9,-1,5,50,0,0,0,0,0" rotation="0" text_from="ElementInfo" uuid="{8bc4bc46-d5d0-4037-8e6b-db4a92d47a49}" Halignment="AlignLeft" x="-11" y="-14.5" frame="false" text_width="-1" Valignment="AlignTop" keep_visual_rotation="false">
+                        <text></text>
                         <info_name>label</info_name>
                     </dynamic_elmt_text>
                 </dynamic_texts>
                 <texts_groups/>
             </element>
         </elements>
+        <conductors>
+            <conductor condsize="1" onetextperfolio="0" text_color="#000000" vertirotatetext="270" bus="" function="" formula="" bicolor="false" dash-size="2" cable="" horizontal-alignment="AlignBottom" freezeLabel="false" vertical-alignment="AlignRight" element1="{5692e5ef-4313-40d8-86f8-50c7a6c64ac6}" tension_protocol="" numsize="7" terminal2="{3c4b4f5e-98a2-4daa-9a47-40b8e018166e}" color2="#000000" terminal1="{9cc2fc56-976f-49ac-a0f8-63eb85f716c2}" conductor_section="" element2="{bc973eea-a533-4607-8c5d-e91e1bf381b7}" num="_" horizrotatetext="0" conductor_color="" x="0" y="0" type="multi" displaytext="1">
+                <sequentialNumbers/>
+            </conductor>
+            <conductor condsize="1" onetextperfolio="0" text_color="#000000" vertirotatetext="270" bus="" function="" formula="" bicolor="false" dash-size="2" cable="" horizontal-alignment="AlignBottom" freezeLabel="false" vertical-alignment="AlignRight" element1="{18bd4b77-85b3-4677-b414-be855a99f017}" tension_protocol="" numsize="7" terminal2="{3c4b4f5e-98a2-4daa-9a47-40b8e018166e}" color2="#000000" terminal1="{9cc2fc56-976f-49ac-a0f8-63eb85f716c2}" conductor_section="" element2="{0e295542-ba7a-4017-a85f-4b0e3c6d1bcb}" num="_" horizrotatetext="0" conductor_color="" x="0" y="0" type="multi" displaytext="1">
+                <sequentialNumbers/>
+            </conductor>
+            <conductor condsize="1" onetextperfolio="0" text_color="#000000" vertirotatetext="270" bus="" function="" formula="" bicolor="false" dash-size="2" cable="" horizontal-alignment="AlignBottom" freezeLabel="false" vertical-alignment="AlignRight" element1="{956a00f1-2243-48b5-abff-ec58d087dc74}" tension_protocol="" numsize="7" terminal2="{3c4b4f5e-98a2-4daa-9a47-40b8e018166e}" color2="#000000" terminal1="{9cc2fc56-976f-49ac-a0f8-63eb85f716c2}" conductor_section="" element2="{e50a55eb-310a-4cbb-b13e-cae3ccb4f6e3}" num="_" horizrotatetext="0" conductor_color="" x="0" y="0" type="multi" displaytext="1">
+                <sequentialNumbers/>
+            </conductor>
+            <conductor condsize="1" onetextperfolio="0" text_color="#000000" vertirotatetext="270" bus="" function="" formula="" bicolor="false" dash-size="2" cable="" horizontal-alignment="AlignBottom" freezeLabel="false" vertical-alignment="AlignRight" element1="{f0b5799f-9263-466d-af28-7a3d301fda8b}" tension_protocol="" numsize="7" terminal2="{3c4b4f5e-98a2-4daa-9a47-40b8e018166e}" color2="#000000" terminal1="{9cc2fc56-976f-49ac-a0f8-63eb85f716c2}" conductor_section="" element2="{4745bbd3-6d4a-4b6f-b320-b95c9ceacbfb}" num="_" horizrotatetext="0" conductor_color="" x="0" y="0" type="multi" displaytext="1">
+                <sequentialNumbers/>
+            </conductor>
+            <conductor condsize="1" onetextperfolio="0" text_color="#000000" vertirotatetext="270" bus="" function="" formula="" bicolor="false" dash-size="2" cable="" horizontal-alignment="AlignBottom" freezeLabel="false" vertical-alignment="AlignRight" element1="{b43de3b1-fe38-4d2f-92f1-5e36d6c12577}" tension_protocol="" numsize="7" terminal2="50" color2="#000000" terminal1="{8d99aa04-def0-4573-a0e8-41229ed2f1dc}" conductor_section="" num="_" horizrotatetext="0" conductor_color="" x="0" y="0" type="multi" displaytext="1">
+                <sequentialNumbers/>
+            </conductor>
+            <conductor condsize="1" onetextperfolio="0" text_color="#000000" vertirotatetext="270" bus="" function="" formula="" bicolor="false" dash-size="2" cable="" horizontal-alignment="AlignBottom" freezeLabel="false" vertical-alignment="AlignRight" element1="{86221ac7-490c-4ec1-a741-1cb9a9436d08}" tension_protocol="" numsize="7" terminal2="{3c4b4f5e-98a2-4daa-9a47-40b8e018166e}" color2="#000000" terminal1="{9cc2fc56-976f-49ac-a0f8-63eb85f716c2}" conductor_section="" element2="{01eb4e14-44ed-45b7-9888-f3f30e47ce0c}" num="_" horizrotatetext="0" conductor_color="" x="0" y="0" type="multi" displaytext="1">
+                <sequentialNumbers/>
+            </conductor>
+            <conductor condsize="1" onetextperfolio="0" text_color="#000000" vertirotatetext="270" bus="" function="" formula="" bicolor="false" dash-size="2" cable="" horizontal-alignment="AlignBottom" freezeLabel="false" vertical-alignment="AlignRight" element1="{bc973eea-a533-4607-8c5d-e91e1bf381b7}" tension_protocol="" numsize="7" terminal2="{3c4b4f5e-98a2-4daa-9a47-40b8e018166e}" color2="#000000" terminal1="{9cc2fc56-976f-49ac-a0f8-63eb85f716c2}" conductor_section="" element2="{b43de3b1-fe38-4d2f-92f1-5e36d6c12577}" num="_" horizrotatetext="0" conductor_color="" x="0" y="0" type="multi" displaytext="1">
+                <sequentialNumbers/>
+            </conductor>
+            <conductor condsize="1" onetextperfolio="0" text_color="#000000" vertirotatetext="270" bus="" function="" formula="" bicolor="false" dash-size="2" cable="" horizontal-alignment="AlignBottom" freezeLabel="false" vertical-alignment="AlignRight" element1="{4745bbd3-6d4a-4b6f-b320-b95c9ceacbfb}" tension_protocol="" numsize="7" terminal2="{3c4b4f5e-98a2-4daa-9a47-40b8e018166e}" color2="#000000" terminal1="{9cc2fc56-976f-49ac-a0f8-63eb85f716c2}" conductor_section="" element2="{956a00f1-2243-48b5-abff-ec58d087dc74}" num="_" horizrotatetext="0" conductor_color="" x="0" y="0" type="multi" displaytext="1">
+                <sequentialNumbers/>
+            </conductor>
+            <conductor condsize="1" onetextperfolio="0" text_color="#000000" vertirotatetext="270" bus="" function="" formula="" bicolor="false" dash-size="2" cable="" horizontal-alignment="AlignBottom" freezeLabel="false" vertical-alignment="AlignRight" element1="{5692e5ef-4313-40d8-86f8-50c7a6c64ac6}" tension_protocol="" numsize="7" terminal2="46" color2="#000000" terminal1="{8d99aa04-def0-4573-a0e8-41229ed2f1dc}" conductor_section="" num="_" horizrotatetext="0" conductor_color="" x="0" y="0" type="multi" displaytext="1">
+                <sequentialNumbers/>
+            </conductor>
+            <conductor condsize="1" onetextperfolio="0" text_color="#000000" vertirotatetext="270" bus="" function="" formula="" bicolor="false" dash-size="2" cable="" horizontal-alignment="AlignBottom" freezeLabel="false" vertical-alignment="AlignRight" element1="{bc973eea-a533-4607-8c5d-e91e1bf381b7}" tension_protocol="" numsize="7" terminal2="48" color2="#000000" terminal1="{8d99aa04-def0-4573-a0e8-41229ed2f1dc}" conductor_section="" num="_" horizrotatetext="0" conductor_color="" x="0" y="0" type="multi" displaytext="1">
+                <sequentialNumbers/>
+            </conductor>
+            <conductor condsize="1" onetextperfolio="0" text_color="#000000" vertirotatetext="270" bus="" function="" formula="" bicolor="false" dash-size="2" cable="" horizontal-alignment="AlignBottom" freezeLabel="false" vertical-alignment="AlignRight" element1="{62073545-c5be-45a2-9961-4cd5e724fb62}" tension_protocol="" numsize="7" terminal2="13" color2="#000000" terminal1="{f2e49ff6-ee59-492e-a6ad-82708479afd6}" conductor_section="" num="_" horizrotatetext="0" conductor_color="" x="0" y="0" type="multi" displaytext="1">
+                <sequentialNumbers/>
+            </conductor>
+            <conductor condsize="1" onetextperfolio="0" text_color="#000000" vertirotatetext="270" bus="" function="" formula="" bicolor="false" dash-size="2" cable="" horizontal-alignment="AlignBottom" freezeLabel="false" vertical-alignment="AlignRight" element1="{01eb4e14-44ed-45b7-9888-f3f30e47ce0c}" tension_protocol="" numsize="7" terminal2="{3c4b4f5e-98a2-4daa-9a47-40b8e018166e}" color2="#000000" terminal1="{9cc2fc56-976f-49ac-a0f8-63eb85f716c2}" conductor_section="" element2="{18bd4b77-85b3-4677-b414-be855a99f017}" num="_" horizrotatetext="0" conductor_color="" x="0" y="0" type="multi" displaytext="1">
+                <sequentialNumbers/>
+            </conductor>
+            <conductor condsize="1" onetextperfolio="0" text_color="#000000" vertirotatetext="270" bus="" function="" formula="" bicolor="false" dash-size="2" cable="" horizontal-alignment="AlignBottom" freezeLabel="false" vertical-alignment="AlignRight" element1="{62073545-c5be-45a2-9961-4cd5e724fb62}" tension_protocol="" numsize="7" terminal2="{3c4b4f5e-98a2-4daa-9a47-40b8e018166e}" color2="#000000" terminal1="{9cc2fc56-976f-49ac-a0f8-63eb85f716c2}" conductor_section="" element2="{5692e5ef-4313-40d8-86f8-50c7a6c64ac6}" num="_" horizrotatetext="0" conductor_color="" x="0" y="0" type="multi" displaytext="1">
+                <sequentialNumbers/>
+            </conductor>
+        </conductors>
         <inputs>
-            <input rotation="0" x="364.11" text="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;>&#xa;&lt;html>&lt;head>&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; />&lt;style type=&quot;text/css&quot;>&#xa;p, li { white-space: pre-wrap; }&#xa;&lt;/style>&lt;/head>&lt;body style=&quot; font-family:'Sans Serif'; font-size:9pt; font-weight:0; font-style:normal;&quot;>&#xa;&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;>&lt;br />&lt;/p>&lt;/body>&lt;/html>" y="231.561" font="Sans Serif,9,-1,5,0,0,0,0,0,0,normal"/>
-            <input rotation="0" x="348.141" text="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;>&#xa;&lt;html>&lt;head>&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; />&lt;style type=&quot;text/css&quot;>&#xa;p, li { white-space: pre-wrap; }&#xa;&lt;/style>&lt;/head>&lt;body style=&quot; font-family:'Sans Serif'; font-size:9pt; font-weight:0; font-style:normal;&quot;>&#xa;&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;>&lt;br />&lt;/p>&lt;/body>&lt;/html>" y="404.415" font="Sans Serif,9,-1,5,0,0,0,0,0,0,normal"/>
-            <input rotation="0" x="670" text="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;>&#xa;&lt;html>&lt;head>&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; />&lt;style type=&quot;text/css&quot;>&#xa;p, li { white-space: pre-wrap; }&#xa;&lt;/style>&lt;/head>&lt;body style=&quot; font-family:'Sans Serif'; font-size:9pt; font-weight:0; font-style:normal;&quot;>&#xa;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;>1п 10A&lt;/p>&lt;/body>&lt;/html>" y="320" font="Sans Serif,9,-1,5,0,0,0,0,0,0,normal"/>
-            <input rotation="0" x="530" text="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;>&#xa;&lt;html>&lt;head>&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; />&lt;style type=&quot;text/css&quot;>&#xa;p, li { white-space: pre-wrap; }&#xa;&lt;/style>&lt;/head>&lt;body style=&quot; font-family:'Sans Serif'; font-size:9pt; font-weight:0; font-style:normal;&quot;>&#xa;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;>1п 25A&lt;/p>&lt;/body>&lt;/html>" y="320" font="Sans Serif,9,-1,5,0,0,0,0,0,0,normal"/>
-            <input rotation="0" x="460" text="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;>&#xa;&lt;html>&lt;head>&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; />&lt;style type=&quot;text/css&quot;>&#xa;p, li { white-space: pre-wrap; }&#xa;&lt;/style>&lt;/head>&lt;body style=&quot; font-family:'Sans Serif'; font-size:9pt; font-weight:0; font-style:normal;&quot;>&#xa;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;>5,5&lt;/p>&lt;/body>&lt;/html>" y="420" font="Sans Serif,9,-1,5,0,0,0,0,0,0,normal"/>
-            <input rotation="0" x="600" text="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;>&#xa;&lt;html>&lt;head>&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; />&lt;style type=&quot;text/css&quot;>&#xa;p, li { white-space: pre-wrap; }&#xa;&lt;/style>&lt;/head>&lt;body style=&quot; font-family:'Sans Serif'; font-size:9pt; font-weight:0; font-style:normal;&quot;>&#xa;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;>5,5&lt;/p>&lt;/body>&lt;/html>" y="420" font="Sans Serif,9,-1,5,0,0,0,0,0,0,normal"/>
-            <input rotation="0" x="720" text="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;>&#xa;&lt;html>&lt;head>&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; />&lt;style type=&quot;text/css&quot;>&#xa;p, li { white-space: pre-wrap; }&#xa;&lt;/style>&lt;/head>&lt;body style=&quot; font-family:'Sans Serif'; font-size:9pt; font-weight:0; font-style:normal;&quot;>&#xa;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;>2,2&lt;/p>&lt;/body>&lt;/html>" y="420" font="Sans Serif,9,-1,5,0,0,0,0,0,0,normal"/>
-            <input rotation="0" x="400" text="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;>&#xa;&lt;html>&lt;head>&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; />&lt;style type=&quot;text/css&quot;>&#xa;p, li { white-space: pre-wrap; }&#xa;&lt;/style>&lt;/head>&lt;body style=&quot; font-family:'Sans Serif'; font-size:9pt; font-weight:0; font-style:normal;&quot;>&#xa;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;>1п 25A&lt;/p>&lt;/body>&lt;/html>" y="320" font="Sans Serif,9,-1,5,0,0,0,0,0,0,normal"/>
-            <input rotation="0" x="460" text="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;>&#xa;&lt;html>&lt;head>&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; />&lt;style type=&quot;text/css&quot;>&#xa;p, li { white-space: pre-wrap; }&#xa;&lt;/style>&lt;/head>&lt;body style=&quot; font-family:'Sans Serif'; font-size:9pt; font-weight:0; font-style:normal;&quot;>&#xa;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;>Бюра&lt;/p>&lt;/body>&lt;/html>" y="460" font="Sans Serif,9,-1,5,0,0,0,0,0,0,normal"/>
-            <input rotation="0" x="405.564" text="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;>&#xa;&lt;html>&lt;head>&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; />&lt;style type=&quot;text/css&quot;>&#xa;p, li { white-space: pre-wrap; }&#xa;&lt;/style>&lt;/head>&lt;body style=&quot; font-family:'Sans Serif'; font-size:9pt; font-weight:0; font-style:normal;&quot;>&#xa;&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;>&lt;br />&lt;/p>&lt;/body>&lt;/html>" y="122.448" font="Sans Serif,9,-1,5,0,0,0,0,0,0,normal"/>
-            <input rotation="0" x="399.948" text="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;>&#xa;&lt;html>&lt;head>&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; />&lt;style type=&quot;text/css&quot;>&#xa;p, li { white-space: pre-wrap; }&#xa;&lt;/style>&lt;/head>&lt;body style=&quot; font-family:'Sans Serif'; font-size:9pt; font-weight:0; font-style:normal;&quot;>&#xa;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;>L&lt;/p>&lt;/body>&lt;/html>" y="109.855" font="Sans Serif,9,-1,5,0,0,0,0,0,0,normal"/>
-            <input rotation="0" x="440" text="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;>&#xa;&lt;html>&lt;head>&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; />&lt;style type=&quot;text/css&quot;>&#xa;p, li { white-space: pre-wrap; }&#xa;&lt;/style>&lt;/head>&lt;body style=&quot; font-family:'Sans Serif'; font-size:9pt; font-weight:0; font-style:normal;&quot;>&#xa;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;>PE&lt;/p>&lt;/body>&lt;/html>" y="110" font="Sans Serif,9,-1,5,0,0,0,0,0,0,normal"/>
-            <input rotation="0" x="360" text="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;>&#xa;&lt;html>&lt;head>&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; />&lt;style type=&quot;text/css&quot;>&#xa;p, li { white-space: pre-wrap; }&#xa;&lt;/style>&lt;/head>&lt;body style=&quot; font-family:'Sans Serif'; font-size:9pt; font-weight:0; font-style:normal;&quot;>&#xa;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;>N&lt;/p>&lt;/body>&lt;/html>" y="240" font="Sans Serif,9,-1,5,0,0,0,0,0,0,normal"/>
-            <input rotation="0" x="680" text="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;>&#xa;&lt;html>&lt;head>&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; />&lt;style type=&quot;text/css&quot;>&#xa;p, li { white-space: pre-wrap; }&#xa;&lt;/style>&lt;/head>&lt;body style=&quot; font-family:'Sans Serif'; font-size:9pt; font-weight:0; font-style:normal;&quot;>&#xa;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;>Осветление&lt;/p>&lt;/body>&lt;/html>" y="460" font="Sans Serif,9,-1,5,0,0,0,0,0,0,normal"/>
-            <input rotation="0" x="540" text="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;>&#xa;&lt;html>&lt;head>&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; />&lt;style type=&quot;text/css&quot;>&#xa;p, li { white-space: pre-wrap; }&#xa;&lt;/style>&lt;/head>&lt;body style=&quot; font-family:'Sans Serif'; font-size:9pt; font-weight:0; font-style:normal;&quot;>&#xa;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;>&lt;span style=&quot; font-size:8pt;&quot;>Помощна маса/&lt;/span>&lt;/p>&#xa;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;>&lt;span style=&quot; font-size:8pt;&quot;>Климатик&lt;/span>&lt;/p>&lt;/body>&lt;/html>" y="460" font="Sans Serif,9,-1,5,0,0,0,0,0,0,normal"/>
-            <input rotation="0" x="360" text="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;>&#xa;&lt;html>&lt;head>&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; />&lt;style type=&quot;text/css&quot;>&#xa;p, li { white-space: pre-wrap; }&#xa;&lt;/style>&lt;/head>&lt;body style=&quot; font-family:'Sans Serif'; font-size:9pt; font-weight:0; font-style:normal;&quot;>&#xa;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;>PE&lt;/p>&lt;/body>&lt;/html>" y="260" font="Sans Serif,9,-1,5,0,0,0,0,0,0,normal"/>
-            <input rotation="0" x="420" text="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;>&#xa;&lt;html>&lt;head>&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; />&lt;style type=&quot;text/css&quot;>&#xa;p, li { white-space: pre-wrap; }&#xa;&lt;/style>&lt;/head>&lt;body style=&quot; font-family:'Sans Serif'; font-size:9pt; font-weight:0; font-style:normal;&quot;>&#xa;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;>N&lt;/p>&lt;/body>&lt;/html>" y="110" font="Sans Serif,9,-1,5,0,0,0,0,0,0,normal"/>
-            <input rotation="0" x="360" text="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;>&#xa;&lt;html>&lt;head>&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; />&lt;style type=&quot;text/css&quot;>&#xa;p, li { white-space: pre-wrap; }&#xa;&lt;/style>&lt;/head>&lt;body style=&quot; font-family:'Sans Serif'; font-size:9pt; font-weight:0; font-style:normal;&quot;>&#xa;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;>L&lt;/p>&lt;/body>&lt;/html>" y="220" font="Sans Serif,9,-1,5,0,0,0,0,0,0,normal"/>
-            <input rotation="0" x="580" text="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;>&#xa;&lt;html>&lt;head>&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; />&lt;style type=&quot;text/css&quot;>&#xa;p, li { white-space: pre-wrap; }&#xa;&lt;/style>&lt;/head>&lt;body style=&quot; font-family:'Sans Serif'; font-size:9pt; font-weight:0; font-style:normal;&quot;>&#xa;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;>&lt;span style=&quot; font-family:'MS Shell Dlg 2'; font-size:7.8pt; font-weight:400;&quot;>ПВВ-МБ1 2Х2.5&lt;/span>&lt;/p>&lt;/body>&lt;/html>" y="440" font="Sans Serif,9,-1,5,0,0,0,0,0,0,normal"/>
-            <input rotation="0" x="700" text="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;>&#xa;&lt;html>&lt;head>&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; />&lt;style type=&quot;text/css&quot;>&#xa;p, li { white-space: pre-wrap; }&#xa;&lt;/style>&lt;/head>&lt;body style=&quot; font-family:'Sans Serif'; font-size:9pt; font-weight:0; font-style:normal;&quot;>&#xa;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;>&lt;span style=&quot; font-family:'MS Shell Dlg 2'; font-size:7.8pt; font-weight:400;&quot;>ПВВ-МБ1 2Х1.5&lt;/span>&lt;/p>&lt;/body>&lt;/html>" y="440" font="Sans Serif,9,-1,5,0,0,0,0,0,0,normal"/>
-            <input rotation="0" x="610" text="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;>&#xa;&lt;html>&lt;head>&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; />&lt;style type=&quot;text/css&quot;>&#xa;p, li { white-space: pre-wrap; }&#xa;&lt;/style>&lt;/head>&lt;body style=&quot; font-family:'Sans Serif'; font-size:9pt; font-weight:0; font-style:normal;&quot;>&#xa;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;>2&lt;/p>&lt;/body>&lt;/html>" y="400" font="Sans Serif,9,-1,5,0,0,0,0,0,0,normal"/>
-            <input rotation="0" x="730" text="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;>&#xa;&lt;html>&lt;head>&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; />&lt;style type=&quot;text/css&quot;>&#xa;p, li { white-space: pre-wrap; }&#xa;&lt;/style>&lt;/head>&lt;body style=&quot; font-family:'Sans Serif'; font-size:9pt; font-weight:0; font-style:normal;&quot;>&#xa;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;>3&lt;/p>&lt;/body>&lt;/html>" y="400" font="Sans Serif,9,-1,5,0,0,0,0,0,0,normal"/>
-            <input rotation="0" x="250" text="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;>&#xa;&lt;html>&lt;head>&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; />&lt;style type=&quot;text/css&quot;>&#xa;p, li { white-space: pre-wrap; }&#xa;&lt;/style>&lt;/head>&lt;body style=&quot; font-family:'Sans Serif'; font-size:9pt; font-weight:0; font-style:normal;&quot;>&#xa;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;>Токов кръг №&lt;/p>&lt;/body>&lt;/html>" y="400" font="Sans Serif,9,-1,5,0,0,0,0,0,0,normal"/>
-            <input rotation="0" x="250" text="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;>&#xa;&lt;html>&lt;head>&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; />&lt;style type=&quot;text/css&quot;>&#xa;p, li { white-space: pre-wrap; }&#xa;&lt;/style>&lt;/head>&lt;body style=&quot; font-family:'Sans Serif'; font-size:9pt; font-weight:0; font-style:normal;&quot;>&#xa;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;>Инсталирана мощност P, kW&lt;/p>&lt;/body>&lt;/html>" y="420" font="Sans Serif,9,-1,5,0,0,0,0,0,0,normal"/>
-            <input rotation="0" x="250" text="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;>&#xa;&lt;html>&lt;head>&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; />&lt;style type=&quot;text/css&quot;>&#xa;p, li { white-space: pre-wrap; }&#xa;&lt;/style>&lt;/head>&lt;body style=&quot; font-family:'Sans Serif'; font-size:9pt; font-weight:0; font-style:normal;&quot;>&#xa;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;>Захранващ кабел,  mm2&lt;/p>&lt;/body>&lt;/html>" y="440" font="Sans Serif,9,-1,5,0,0,0,0,0,0,normal"/>
-            <input rotation="0" x="250" text="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;>&#xa;&lt;html>&lt;head>&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; />&lt;style type=&quot;text/css&quot;>&#xa;p, li { white-space: pre-wrap; }&#xa;&lt;/style>&lt;/head>&lt;body style=&quot; font-family:'Sans Serif'; font-size:9pt; font-weight:0; font-style:normal;&quot;>&#xa;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;>Потребител/и&lt;/p>&lt;/body>&lt;/html>" y="460" font="Sans Serif,9,-1,5,0,0,0,0,0,0,normal"/>
-            <input rotation="0" x="440" text="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;>&#xa;&lt;html>&lt;head>&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; />&lt;style type=&quot;text/css&quot;>&#xa;p, li { white-space: pre-wrap; }&#xa;&lt;/style>&lt;/head>&lt;body style=&quot; font-family:'Sans Serif'; font-size:9pt; font-weight:0; font-style:normal;&quot;>&#xa;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;>&lt;span style=&quot; font-family:'MS Shell Dlg 2'; font-size:7.8pt; font-weight:400;&quot;>ПВВ-МБ1 2Х2.5&lt;/span>&lt;/p>&lt;/body>&lt;/html>" y="440" font="Sans Serif,9,-1,5,0,0,0,0,0,0,normal"/>
-            <input rotation="0" x="330" text="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;>&#xa;&lt;html>&lt;head>&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; />&lt;style type=&quot;text/css&quot;>&#xa;p, li { white-space: pre-wrap; }&#xa;&lt;/style>&lt;/head>&lt;body style=&quot; font-family:'Sans Serif'; font-size:9pt; font-weight:0; font-style:normal;&quot;>&#xa;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;>1п 32A&lt;/p>&lt;/body>&lt;/html>" y="190" font="Sans Serif,9,-1,5,0,0,0,0,0,0,normal"/>
-            <input rotation="0" x="470" text="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;>&#xa;&lt;html>&lt;head>&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; />&lt;style type=&quot;text/css&quot;>&#xa;p, li { white-space: pre-wrap; }&#xa;&lt;/style>&lt;/head>&lt;body style=&quot; font-family:'Sans Serif'; font-size:9pt; font-weight:0; font-style:normal;&quot;>&#xa;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;>1&lt;/p>&lt;/body>&lt;/html>" y="400" font="Sans Serif,9,-1,5,0,0,0,0,0,0,normal"/>
-            <input rotation="0" x="340" text="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;>&#xa;&lt;html>&lt;head>&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; />&lt;style type=&quot;text/css&quot;>&#xa;p, li { white-space: pre-wrap; }&#xa;&lt;/style>&lt;/head>&lt;body style=&quot; font-family:'Sans Serif'; font-size:9pt; font-weight:0; font-style:normal;&quot;>&#xa;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;>&lt;span style=&quot; font-family:'MS Shell Dlg 2'; font-size:7.8pt; font-weight:400;&quot;>СВТ 3Х4 мм2&lt;/span>&lt;/p>&lt;/body>&lt;/html>" y="140" font="Sans Serif,9,-1,5,0,0,0,0,0,0,normal"/>
-            <input rotation="0" x="50" text="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;>&#xa;&lt;html>&lt;head>&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; />&lt;style type=&quot;text/css&quot;>&#xa;p, li { white-space: pre-wrap; }&#xa;&lt;/style>&lt;/head>&lt;body style=&quot; font-family:'Sans Serif'; font-size:9pt; font-weight:0; font-style:normal;&quot;>&#xa;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;>Plamen Dimitrov&lt;/p>&lt;/body>&lt;/html>" y="830" font="Sans Serif,9,-1,5,0,0,0,0,0,0,normal"/>
-            <input rotation="0" x="50" text="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;>&#xa;&lt;html>&lt;head>&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; />&lt;style type=&quot;text/css&quot;>&#xa;p, li { white-space: pre-wrap; }&#xa;&lt;/style>&lt;/head>&lt;body style=&quot; font-family:'Sans Serif'; font-size:9pt; font-weight:0; font-style:normal;&quot;>&#xa;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;>23/1/2026&lt;/p>&lt;/body>&lt;/html>" y="850" font="Sans Serif,9,-1,5,0,0,0,0,0,0,normal"/>
-            <input rotation="0" x="270" text="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;>&#xa;&lt;html>&lt;head>&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; />&lt;style type=&quot;text/css&quot;>&#xa;p, li { white-space: pre-wrap; }&#xa;&lt;/style>&lt;/head>&lt;body style=&quot; font-family:'Sans Serif'; font-size:9pt; font-weight:0; font-style:normal;&quot;>&#xa;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;>Wiring / Molding injection office&lt;/p>&lt;/body>&lt;/html>" y="840" font="Sans Serif,9,-1,5,0,0,0,0,0,0,normal"/>
-            <input rotation="0" x="360" text="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;>&#xa;&lt;html>&lt;head>&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; />&lt;style type=&quot;text/css&quot;>&#xa;p, li { white-space: pre-wrap; }&#xa;&lt;/style>&lt;/head>&lt;body style=&quot; font-family:'Sans Serif'; font-size:9pt; font-weight:0; font-style:normal;&quot;>&#xa;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;>220V&lt;/p>&lt;/body>&lt;/html>" y="110" font="Sans Serif,9,-1,5,0,0,0,0,0,0,normal"/>
+            <input font="Sans Serif,9,-1,5,0,0,0,0,0,0,normal" rotation="0" x="50" y="850" text="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;>&#xa;&lt;html>&lt;head>&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; />&lt;style type=&quot;text/css&quot;>&#xa;p, li { white-space: pre-wrap; }&#xa;&lt;/style>&lt;/head>&lt;body style=&quot; font-family:'Sans Serif'; font-size:9pt; font-weight:0; font-style:normal;&quot;>&#xa;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;>23/1/2026&lt;/p>&lt;/body>&lt;/html>"/>
+            <input font="Sans Serif,9,-1,5,0,0,0,0,0,0,normal" rotation="0" x="270" y="840" text="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;>&#xa;&lt;html>&lt;head>&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; />&lt;style type=&quot;text/css&quot;>&#xa;p, li { white-space: pre-wrap; }&#xa;&lt;/style>&lt;/head>&lt;body style=&quot; font-family:'Sans Serif'; font-size:9pt; font-weight:0; font-style:normal;&quot;>&#xa;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;>&lt;span style=&quot; font-family:'Consolas','Courier New','monospace'; font-size:7.8pt; font-weight:400; color:#000000;&quot;>Схема на разпределително табло - Офис Формовеане/&lt;/span>&lt;/p>&#xa;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;>&lt;span style=&quot; font-family:'Consolas','Courier New','monospace'; font-size:7.8pt; font-weight:400; color:#000000;&quot;>Electrical Panel - Injection Molding Office Wiring Diagram&lt;/span>&lt;/p>&#xa;&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Consolas','Courier New','monospace'; font-size:7.8pt; font-weight:400; color:#000000;&quot;>&lt;br />&lt;/p>&lt;/body>&lt;/html>"/>
+            <input font="Sans Serif,9,-1,5,0,0,0,0,0,0,normal" rotation="0" x="50" y="830" text="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;>&#xa;&lt;html>&lt;head>&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; />&lt;style type=&quot;text/css&quot;>&#xa;p, li { white-space: pre-wrap; }&#xa;&lt;/style>&lt;/head>&lt;body style=&quot; font-family:'Sans Serif'; font-size:9pt; font-weight:0; font-style:normal;&quot;>&#xa;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;>Plamen Dimitrov&lt;/p>&lt;/body>&lt;/html>"/>
+            <input font="Sans Serif,9,-1,5,0,0,0,0,0,0,normal" rotation="0" x="340" y="140" text="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;>&#xa;&lt;html>&lt;head>&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; />&lt;style type=&quot;text/css&quot;>&#xa;p, li { white-space: pre-wrap; }&#xa;&lt;/style>&lt;/head>&lt;body style=&quot; font-family:'Sans Serif'; font-size:9pt; font-weight:0; font-style:normal;&quot;>&#xa;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;>&lt;span style=&quot; font-family:'MS Shell Dlg 2'; font-size:7.8pt; font-weight:400;&quot;>СВТ 3Х4 мм2&lt;/span>&lt;/p>&lt;/body>&lt;/html>"/>
+            <input font="Sans Serif,9,-1,5,0,0,0,0,0,0,normal" rotation="0" x="470" y="400" text="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;>&#xa;&lt;html>&lt;head>&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; />&lt;style type=&quot;text/css&quot;>&#xa;p, li { white-space: pre-wrap; }&#xa;&lt;/style>&lt;/head>&lt;body style=&quot; font-family:'Sans Serif'; font-size:9pt; font-weight:0; font-style:normal;&quot;>&#xa;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;>1&lt;/p>&lt;/body>&lt;/html>"/>
+            <input font="Sans Serif,9,-1,5,0,0,0,0,0,0,normal" rotation="0" x="440" y="440" text="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;>&#xa;&lt;html>&lt;head>&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; />&lt;style type=&quot;text/css&quot;>&#xa;p, li { white-space: pre-wrap; }&#xa;&lt;/style>&lt;/head>&lt;body style=&quot; font-family:'Sans Serif'; font-size:9pt; font-weight:0; font-style:normal;&quot;>&#xa;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;>&lt;span style=&quot; font-family:'MS Shell Dlg 2'; font-size:7.8pt; font-weight:400;&quot;>ПВВ-МБ1 2Х2.5&lt;/span>&lt;/p>&lt;/body>&lt;/html>"/>
+            <input font="Sans Serif,9,-1,5,0,0,0,0,0,0,normal" rotation="0" x="330" y="190" text="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;>&#xa;&lt;html>&lt;head>&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; />&lt;style type=&quot;text/css&quot;>&#xa;p, li { white-space: pre-wrap; }&#xa;&lt;/style>&lt;/head>&lt;body style=&quot; font-family:'Sans Serif'; font-size:9pt; font-weight:0; font-style:normal;&quot;>&#xa;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;>1п 32A&lt;/p>&lt;/body>&lt;/html>"/>
+            <input font="Sans Serif,9,-1,5,0,0,0,0,0,0,normal" rotation="0" x="360" y="220" text="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;>&#xa;&lt;html>&lt;head>&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; />&lt;style type=&quot;text/css&quot;>&#xa;p, li { white-space: pre-wrap; }&#xa;&lt;/style>&lt;/head>&lt;body style=&quot; font-family:'Sans Serif'; font-size:9pt; font-weight:0; font-style:normal;&quot;>&#xa;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;>L&lt;/p>&lt;/body>&lt;/html>"/>
+            <input font="Sans Serif,9,-1,5,0,0,0,0,0,0,normal" rotation="0" x="610" y="400" text="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;>&#xa;&lt;html>&lt;head>&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; />&lt;style type=&quot;text/css&quot;>&#xa;p, li { white-space: pre-wrap; }&#xa;&lt;/style>&lt;/head>&lt;body style=&quot; font-family:'Sans Serif'; font-size:9pt; font-weight:0; font-style:normal;&quot;>&#xa;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;>2&lt;/p>&lt;/body>&lt;/html>"/>
+            <input font="Sans Serif,9,-1,5,0,0,0,0,0,0,normal" rotation="0" x="540" y="460" text="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;>&#xa;&lt;html>&lt;head>&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; />&lt;style type=&quot;text/css&quot;>&#xa;p, li { white-space: pre-wrap; }&#xa;&lt;/style>&lt;/head>&lt;body style=&quot; font-family:'Sans Serif'; font-size:9pt; font-weight:0; font-style:normal;&quot;>&#xa;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;>&lt;span style=&quot; font-size:8pt;&quot;>Помощна маса/&lt;/span>&lt;/p>&#xa;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;>&lt;span style=&quot; font-size:8pt;&quot;>Климатик&lt;/span>&lt;/p>&lt;/body>&lt;/html>"/>
+            <input font="Sans Serif,9,-1,5,0,0,0,0,0,0,normal" rotation="0" x="700" y="440" text="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;>&#xa;&lt;html>&lt;head>&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; />&lt;style type=&quot;text/css&quot;>&#xa;p, li { white-space: pre-wrap; }&#xa;&lt;/style>&lt;/head>&lt;body style=&quot; font-family:'Sans Serif'; font-size:9pt; font-weight:0; font-style:normal;&quot;>&#xa;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;>&lt;span style=&quot; font-family:'MS Shell Dlg 2'; font-size:7.8pt; font-weight:400;&quot;>ПВВ-МБ1 2Х1.5&lt;/span>&lt;/p>&lt;/body>&lt;/html>"/>
+            <input font="Sans Serif,9,-1,5,0,0,0,0,0,0,normal" rotation="0" x="360" y="260" text="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;>&#xa;&lt;html>&lt;head>&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; />&lt;style type=&quot;text/css&quot;>&#xa;p, li { white-space: pre-wrap; }&#xa;&lt;/style>&lt;/head>&lt;body style=&quot; font-family:'Sans Serif'; font-size:9pt; font-weight:0; font-style:normal;&quot;>&#xa;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;>PE&lt;/p>&lt;/body>&lt;/html>"/>
+            <input font="Sans Serif,9,-1,5,0,0,0,0,0,0,normal" rotation="0" x="580" y="440" text="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;>&#xa;&lt;html>&lt;head>&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; />&lt;style type=&quot;text/css&quot;>&#xa;p, li { white-space: pre-wrap; }&#xa;&lt;/style>&lt;/head>&lt;body style=&quot; font-family:'Sans Serif'; font-size:9pt; font-weight:0; font-style:normal;&quot;>&#xa;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;>&lt;span style=&quot; font-family:'MS Shell Dlg 2'; font-size:7.8pt; font-weight:400;&quot;>ПВВ-МБ1 2Х2.5&lt;/span>&lt;/p>&lt;/body>&lt;/html>"/>
+            <input font="Sans Serif,9,-1,5,0,0,0,0,0,0,normal" rotation="0" x="730" y="400" text="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;>&#xa;&lt;html>&lt;head>&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; />&lt;style type=&quot;text/css&quot;>&#xa;p, li { white-space: pre-wrap; }&#xa;&lt;/style>&lt;/head>&lt;body style=&quot; font-family:'Sans Serif'; font-size:9pt; font-weight:0; font-style:normal;&quot;>&#xa;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;>3&lt;/p>&lt;/body>&lt;/html>"/>
+            <input font="Sans Serif,9,-1,5,0,0,0,0,0,0,normal" rotation="0" x="250" y="400" text="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;>&#xa;&lt;html>&lt;head>&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; />&lt;style type=&quot;text/css&quot;>&#xa;p, li { white-space: pre-wrap; }&#xa;&lt;/style>&lt;/head>&lt;body style=&quot; font-family:'Sans Serif'; font-size:9pt; font-weight:0; font-style:normal;&quot;>&#xa;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;>Токов кръг №&lt;/p>&lt;/body>&lt;/html>"/>
+            <input font="Sans Serif,9,-1,5,0,0,0,0,0,0,normal" rotation="0" x="420" y="110" text="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;>&#xa;&lt;html>&lt;head>&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; />&lt;style type=&quot;text/css&quot;>&#xa;p, li { white-space: pre-wrap; }&#xa;&lt;/style>&lt;/head>&lt;body style=&quot; font-family:'Sans Serif'; font-size:9pt; font-weight:0; font-style:normal;&quot;>&#xa;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;>N&lt;/p>&lt;/body>&lt;/html>"/>
+            <input font="Sans Serif,9,-1,5,0,0,0,0,0,0,normal" rotation="0" x="250" y="420" text="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;>&#xa;&lt;html>&lt;head>&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; />&lt;style type=&quot;text/css&quot;>&#xa;p, li { white-space: pre-wrap; }&#xa;&lt;/style>&lt;/head>&lt;body style=&quot; font-family:'Sans Serif'; font-size:9pt; font-weight:0; font-style:normal;&quot;>&#xa;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;>Инсталирана мощност P, kW&lt;/p>&lt;/body>&lt;/html>"/>
+            <input font="Sans Serif,9,-1,5,0,0,0,0,0,0,normal" rotation="0" x="530" y="320" text="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;>&#xa;&lt;html>&lt;head>&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; />&lt;style type=&quot;text/css&quot;>&#xa;p, li { white-space: pre-wrap; }&#xa;&lt;/style>&lt;/head>&lt;body style=&quot; font-family:'Sans Serif'; font-size:9pt; font-weight:0; font-style:normal;&quot;>&#xa;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;>1п 25A&lt;/p>&lt;/body>&lt;/html>"/>
+            <input font="Sans Serif,9,-1,5,0,0,0,0,0,0,normal" rotation="0" x="460" y="420" text="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;>&#xa;&lt;html>&lt;head>&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; />&lt;style type=&quot;text/css&quot;>&#xa;p, li { white-space: pre-wrap; }&#xa;&lt;/style>&lt;/head>&lt;body style=&quot; font-family:'Sans Serif'; font-size:9pt; font-weight:0; font-style:normal;&quot;>&#xa;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;>5,5&lt;/p>&lt;/body>&lt;/html>"/>
+            <input font="Sans Serif,9,-1,5,0,0,0,0,0,0,normal" rotation="0" x="600" y="420" text="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;>&#xa;&lt;html>&lt;head>&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; />&lt;style type=&quot;text/css&quot;>&#xa;p, li { white-space: pre-wrap; }&#xa;&lt;/style>&lt;/head>&lt;body style=&quot; font-family:'Sans Serif'; font-size:9pt; font-weight:0; font-style:normal;&quot;>&#xa;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;>5,5&lt;/p>&lt;/body>&lt;/html>"/>
+            <input font="Sans Serif,9,-1,5,0,0,0,0,0,0,normal" rotation="0" x="250" y="460" text="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;>&#xa;&lt;html>&lt;head>&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; />&lt;style type=&quot;text/css&quot;>&#xa;p, li { white-space: pre-wrap; }&#xa;&lt;/style>&lt;/head>&lt;body style=&quot; font-family:'Sans Serif'; font-size:9pt; font-weight:0; font-style:normal;&quot;>&#xa;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;>Потребител/и&lt;/p>&lt;/body>&lt;/html>"/>
+            <input font="Sans Serif,9,-1,5,0,0,0,0,0,0,normal" rotation="0" x="348.141" y="404.415" text="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;>&#xa;&lt;html>&lt;head>&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; />&lt;style type=&quot;text/css&quot;>&#xa;p, li { white-space: pre-wrap; }&#xa;&lt;/style>&lt;/head>&lt;body style=&quot; font-family:'Sans Serif'; font-size:9pt; font-weight:0; font-style:normal;&quot;>&#xa;&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;>&lt;br />&lt;/p>&lt;/body>&lt;/html>"/>
+            <input font="Sans Serif,9,-1,5,0,0,0,0,0,0,normal" rotation="0" x="364.11" y="231.561" text="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;>&#xa;&lt;html>&lt;head>&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; />&lt;style type=&quot;text/css&quot;>&#xa;p, li { white-space: pre-wrap; }&#xa;&lt;/style>&lt;/head>&lt;body style=&quot; font-family:'Sans Serif'; font-size:9pt; font-weight:0; font-style:normal;&quot;>&#xa;&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;>&lt;br />&lt;/p>&lt;/body>&lt;/html>"/>
+            <input font="Sans Serif,9,-1,5,0,0,0,0,0,0,normal" rotation="0" x="670" y="320" text="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;>&#xa;&lt;html>&lt;head>&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; />&lt;style type=&quot;text/css&quot;>&#xa;p, li { white-space: pre-wrap; }&#xa;&lt;/style>&lt;/head>&lt;body style=&quot; font-family:'Sans Serif'; font-size:9pt; font-weight:0; font-style:normal;&quot;>&#xa;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;>1п 10A&lt;/p>&lt;/body>&lt;/html>"/>
+            <input font="Sans Serif,9,-1,5,0,0,0,0,0,0,normal" rotation="0" x="405.564" y="122.448" text="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;>&#xa;&lt;html>&lt;head>&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; />&lt;style type=&quot;text/css&quot;>&#xa;p, li { white-space: pre-wrap; }&#xa;&lt;/style>&lt;/head>&lt;body style=&quot; font-family:'Sans Serif'; font-size:9pt; font-weight:0; font-style:normal;&quot;>&#xa;&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;>&lt;br />&lt;/p>&lt;/body>&lt;/html>"/>
+            <input font="Sans Serif,9,-1,5,0,0,0,0,0,0,normal" rotation="0" x="680" y="460" text="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;>&#xa;&lt;html>&lt;head>&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; />&lt;style type=&quot;text/css&quot;>&#xa;p, li { white-space: pre-wrap; }&#xa;&lt;/style>&lt;/head>&lt;body style=&quot; font-family:'Sans Serif'; font-size:9pt; font-weight:0; font-style:normal;&quot;>&#xa;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;>Осветление&lt;/p>&lt;/body>&lt;/html>"/>
+            <input font="Sans Serif,9,-1,5,0,0,0,0,0,0,normal" rotation="0" x="399.948" y="109.855" text="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;>&#xa;&lt;html>&lt;head>&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; />&lt;style type=&quot;text/css&quot;>&#xa;p, li { white-space: pre-wrap; }&#xa;&lt;/style>&lt;/head>&lt;body style=&quot; font-family:'Sans Serif'; font-size:9pt; font-weight:0; font-style:normal;&quot;>&#xa;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;>L&lt;/p>&lt;/body>&lt;/html>"/>
+            <input font="Sans Serif,9,-1,5,0,0,0,0,0,0,normal" rotation="0" x="250" y="440" text="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;>&#xa;&lt;html>&lt;head>&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; />&lt;style type=&quot;text/css&quot;>&#xa;p, li { white-space: pre-wrap; }&#xa;&lt;/style>&lt;/head>&lt;body style=&quot; font-family:'Sans Serif'; font-size:9pt; font-weight:0; font-style:normal;&quot;>&#xa;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;>Захранващ кабел,  mm2&lt;/p>&lt;/body>&lt;/html>"/>
+            <input font="Sans Serif,9,-1,5,0,0,0,0,0,0,normal" rotation="0" x="460" y="460" text="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;>&#xa;&lt;html>&lt;head>&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; />&lt;style type=&quot;text/css&quot;>&#xa;p, li { white-space: pre-wrap; }&#xa;&lt;/style>&lt;/head>&lt;body style=&quot; font-family:'Sans Serif'; font-size:9pt; font-weight:0; font-style:normal;&quot;>&#xa;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;>Бюра&lt;/p>&lt;/body>&lt;/html>"/>
+            <input font="Sans Serif,9,-1,5,0,0,0,0,0,0,normal" rotation="0" x="440" y="110" text="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;>&#xa;&lt;html>&lt;head>&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; />&lt;style type=&quot;text/css&quot;>&#xa;p, li { white-space: pre-wrap; }&#xa;&lt;/style>&lt;/head>&lt;body style=&quot; font-family:'Sans Serif'; font-size:9pt; font-weight:0; font-style:normal;&quot;>&#xa;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;>PE&lt;/p>&lt;/body>&lt;/html>"/>
+            <input font="Sans Serif,9,-1,5,0,0,0,0,0,0,normal" rotation="0" x="720" y="420" text="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;>&#xa;&lt;html>&lt;head>&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; />&lt;style type=&quot;text/css&quot;>&#xa;p, li { white-space: pre-wrap; }&#xa;&lt;/style>&lt;/head>&lt;body style=&quot; font-family:'Sans Serif'; font-size:9pt; font-weight:0; font-style:normal;&quot;>&#xa;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;>2,2&lt;/p>&lt;/body>&lt;/html>"/>
+            <input font="Sans Serif,9,-1,5,0,0,0,0,0,0,normal" rotation="0" x="360" y="240" text="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;>&#xa;&lt;html>&lt;head>&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; />&lt;style type=&quot;text/css&quot;>&#xa;p, li { white-space: pre-wrap; }&#xa;&lt;/style>&lt;/head>&lt;body style=&quot; font-family:'Sans Serif'; font-size:9pt; font-weight:0; font-style:normal;&quot;>&#xa;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;>N&lt;/p>&lt;/body>&lt;/html>"/>
+            <input font="Sans Serif,9,-1,5,0,0,0,0,0,0,normal" rotation="0" x="400" y="320" text="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;>&#xa;&lt;html>&lt;head>&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; />&lt;style type=&quot;text/css&quot;>&#xa;p, li { white-space: pre-wrap; }&#xa;&lt;/style>&lt;/head>&lt;body style=&quot; font-family:'Sans Serif'; font-size:9pt; font-weight:0; font-style:normal;&quot;>&#xa;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;>1п 25A&lt;/p>&lt;/body>&lt;/html>"/>
+            <input font="Sans Serif,9,-1,5,0,0,0,0,0,0,normal" rotation="0" x="360" y="110" text="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;>&#xa;&lt;html>&lt;head>&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; />&lt;style type=&quot;text/css&quot;>&#xa;p, li { white-space: pre-wrap; }&#xa;&lt;/style>&lt;/head>&lt;body style=&quot; font-family:'Sans Serif'; font-size:9pt; font-weight:0; font-style:normal;&quot;>&#xa;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;>220V&lt;/p>&lt;/body>&lt;/html>"/>
+            <input font="Sans Serif,9,-1,5,0,0,0,0,0,0,normal" rotation="0" x="170" y="850" text="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;>&#xa;&lt;html>&lt;head>&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; />&lt;style type=&quot;text/css&quot;>&#xa;p, li { white-space: pre-wrap; }&#xa;&lt;/style>&lt;/head>&lt;body style=&quot; font-family:'Sans Serif'; font-size:9pt; font-weight:0; font-style:normal;&quot;>&#xa;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;>23/1/2026&lt;/p>&lt;/body>&lt;/html>"/>
+            <input font="Sans Serif,9,-1,5,0,0,0,0,0,0,normal" rotation="0" x="120" y="850" text="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;>&#xa;&lt;html>&lt;head>&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; />&lt;style type=&quot;text/css&quot;>&#xa;p, li { white-space: pre-wrap; }&#xa;&lt;/style>&lt;/head>&lt;body style=&quot; font-family:'Sans Serif'; font-size:9pt; font-weight:0; font-style:normal;&quot;>&#xa;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;>Rev.00&lt;/p>&lt;/body>&lt;/html>"/>
         </inputs>
         <shapes>
-            <shape x2="420" type="Line" y1="400" y2="490" z="0" is_movable="1" closed="0" x1="420">
+            <shape y1="310" x2="740" y2="240" type="Line" x1="740" is_movable="1" closed="0" z="0">
                 <pen color="#000000" style="SolidLine" widthF="1"/>
                 <brush color="#000000" style="NoBrush"/>
             </shape>
-            <shape x2="680" type="Line" y1="400" y2="490" z="0" is_movable="1" closed="0" x1="680">
+            <shape y1="240" x2="820" y2="240" type="Line" x1="380" is_movable="1" closed="0" z="0">
                 <pen color="#000000" style="SolidLine" widthF="1"/>
                 <brush color="#000000" style="NoBrush"/>
             </shape>
-            <shape x2="540" type="Line" y1="400" y2="490" z="0" is_movable="1" closed="0" x1="540">
+            <shape y1="350" x2="600" y2="400" type="Line" x1="600" is_movable="1" closed="0" z="0">
                 <pen color="#000000" style="SolidLine" widthF="1"/>
                 <brush color="#000000" style="NoBrush"/>
             </shape>
-            <shape x2="410" type="Line" y1="220" y2="240" z="0" is_movable="1" closed="0" x1="410">
+            <shape y1="260" x2="760" y2="400" type="Line" x1="760" is_movable="1" closed="0" z="0">
                 <pen color="#000000" style="SolidLine" widthF="1"/>
                 <brush color="#000000" style="NoBrush"/>
             </shape>
-            <shape x2="410" type="Line" y1="180" y2="130" z="0" is_movable="1" closed="0" x1="410">
+            <shape y1="350" x2="470" y2="400" type="Line" x1="470" is_movable="1" closed="0" z="0">
                 <pen color="#000000" style="SolidLine" widthF="1"/>
                 <brush color="#000000" style="NoBrush"/>
             </shape>
-            <shape x2="430" type="Line" y1="130" y2="260" z="0" is_movable="1" closed="0" x1="430">
+            <shape y1="260" x2="490" y2="400" type="Line" x1="490" is_movable="1" closed="0" z="0">
                 <pen color="#000000" style="SolidLine" widthF="1"/>
                 <brush color="#000000" style="NoBrush"/>
             </shape>
-            <shape x2="470" type="Line" y1="350" y2="400" z="0" is_movable="1" closed="0" x1="470">
+            <shape y1="220" x2="410" y2="240" type="Line" x1="410" is_movable="1" closed="0" z="0">
                 <pen color="#000000" style="SolidLine" widthF="1"/>
                 <brush color="#000000" style="NoBrush"/>
             </shape>
-            <shape x2="600" type="Line" y1="350" y2="400" z="0" is_movable="1" closed="0" x1="600">
+            <shape y1="280" x2="640" y2="400" type="Line" x1="640" is_movable="1" closed="0" z="0">
                 <pen color="#000000" style="SolidLine" widthF="1"/>
                 <brush color="#000000" style="NoBrush"/>
             </shape>
-            <shape x2="740" type="Line" y1="350" y2="400" z="0" is_movable="1" closed="0" x1="740">
+            <shape y1="260" x2="620" y2="400" type="Line" x1="620" is_movable="1" closed="0" z="0">
                 <pen color="#000000" style="SolidLine" widthF="1"/>
                 <brush color="#000000" style="NoBrush"/>
             </shape>
-            <shape x2="740" type="Line" y1="310" y2="240" z="0" is_movable="1" closed="0" x1="740">
+            <shape y1="260" x2="490" y2="400" type="Line" x1="490" is_movable="1" closed="0" z="0">
                 <pen color="#000000" style="SolidLine" widthF="1"/>
                 <brush color="#000000" style="NoBrush"/>
             </shape>
-            <shape x2="450" type="Line" y1="130" y2="280" z="0" is_movable="1" closed="0" x1="450">
+            <shape y1="130" x2="450" y2="280" type="Line" x1="450" is_movable="1" closed="0" z="0">
                 <pen color="#000000" style="SolidLine" widthF="1"/>
                 <brush color="#000000" style="NoBrush"/>
             </shape>
-            <shape x2="780" type="Line" y1="280" y2="400" z="0" is_movable="1" closed="0" x1="780">
+            <shape y1="280" x2="510" y2="400" type="Line" x1="510" is_movable="1" closed="0" z="0">
                 <pen color="#000000" style="SolidLine" widthF="1"/>
                 <brush color="#000000" style="NoBrush"/>
             </shape>
-            <shape x2="640" type="Line" y1="280" y2="400" z="0" is_movable="1" closed="0" x1="640">
+            <shape y1="280" x2="820" y2="280" type="Line" x1="380" is_movable="1" closed="0" z="0">
                 <pen color="#000000" style="SolidLine" widthF="1"/>
                 <brush color="#000000" style="NoBrush"/>
             </shape>
-            <shape x2="490" type="Line" y1="260" y2="400" z="0" is_movable="1" closed="0" x1="490">
+            <shape y1="460" x2="830" y2="460" type="Line" x1="250" is_movable="1" closed="0" z="0">
                 <pen color="#000000" style="SolidLine" widthF="1"/>
                 <brush color="#000000" style="NoBrush"/>
             </shape>
-            <shape x2="620" type="Line" y1="260" y2="400" z="0" is_movable="1" closed="0" x1="620">
+            <shape y1="400" x2="680" y2="490" type="Line" x1="680" is_movable="1" closed="0" z="0">
                 <pen color="#000000" style="SolidLine" widthF="1"/>
                 <brush color="#000000" style="NoBrush"/>
             </shape>
-            <shape x2="510" type="Line" y1="280" y2="400" z="0" is_movable="1" closed="0" x1="510">
+            <shape y1="180" x2="410" y2="130" type="Line" x1="410" is_movable="1" closed="0" z="0">
                 <pen color="#000000" style="SolidLine" widthF="1"/>
                 <brush color="#000000" style="NoBrush"/>
             </shape>
-            <shape x2="470" type="Line" y1="310" y2="240" z="0" is_movable="1" closed="0" x1="470">
+            <shape y1="310" x2="600" y2="240" type="Line" x1="600" is_movable="1" closed="0" z="0">
                 <pen color="#000000" style="SolidLine" widthF="1"/>
                 <brush color="#000000" style="NoBrush"/>
             </shape>
-            <shape x2="600" type="Line" y1="310" y2="240" z="0" is_movable="1" closed="0" x1="600">
+            <shape y1="400" x2="830" y2="490" type="Rectangle" x1="250" rx="0" is_movable="1" closed="0" ry="0" z="0">
                 <pen color="#000000" style="SolidLine" widthF="1"/>
                 <brush color="#000000" style="NoBrush"/>
             </shape>
-            <shape x2="830" type="Rectangle" y1="400" y2="490" z="0" rx="0" is_movable="1" ry="0" closed="0" x1="250">
+            <shape y1="420" x2="830" y2="420" type="Line" x1="250" is_movable="1" closed="0" z="0">
                 <pen color="#000000" style="SolidLine" widthF="1"/>
                 <brush color="#000000" style="NoBrush"/>
             </shape>
-            <shape x2="830" type="Line" y1="440" y2="440" z="0" is_movable="1" closed="0" x1="250">
+            <shape y1="350" x2="740" y2="400" type="Line" x1="740" is_movable="1" closed="0" z="0">
                 <pen color="#000000" style="SolidLine" widthF="1"/>
                 <brush color="#000000" style="NoBrush"/>
             </shape>
-            <shape x2="830" type="Line" y1="460" y2="460" z="0" is_movable="1" closed="0" x1="250">
+            <shape y1="310" x2="470" y2="240" type="Line" x1="470" is_movable="1" closed="0" z="0">
                 <pen color="#000000" style="SolidLine" widthF="1"/>
                 <brush color="#000000" style="NoBrush"/>
             </shape>
-            <shape x2="830" type="Line" y1="420" y2="420" z="0" is_movable="1" closed="0" x1="250">
+            <shape y1="260" x2="820" y2="260" type="Line" x1="380" is_movable="1" closed="0" z="0">
                 <pen color="#000000" style="SolidLine" widthF="1"/>
                 <brush color="#000000" style="NoBrush"/>
             </shape>
-            <shape x2="820" type="Line" y1="240" y2="240" z="0" is_movable="1" closed="0" x1="380">
+            <shape y1="400" x2="540" y2="490" type="Line" x1="540" is_movable="1" closed="0" z="0">
                 <pen color="#000000" style="SolidLine" widthF="1"/>
                 <brush color="#000000" style="NoBrush"/>
             </shape>
-            <shape x2="490" type="Line" y1="260" y2="400" z="0" is_movable="1" closed="0" x1="490">
+            <shape y1="440" x2="830" y2="440" type="Line" x1="250" is_movable="1" closed="0" z="0">
                 <pen color="#000000" style="SolidLine" widthF="1"/>
                 <brush color="#000000" style="NoBrush"/>
             </shape>
-            <shape x2="760" type="Line" y1="260" y2="400" z="0" is_movable="1" closed="0" x1="760">
+            <shape y1="280" x2="780" y2="400" type="Line" x1="780" is_movable="1" closed="0" z="0">
                 <pen color="#000000" style="SolidLine" widthF="1"/>
                 <brush color="#000000" style="NoBrush"/>
             </shape>
-            <shape x2="820" type="Line" y1="280" y2="280" z="0" is_movable="1" closed="0" x1="380">
+            <shape y1="400" x2="420" y2="490" type="Line" x1="420" is_movable="1" closed="0" z="0">
                 <pen color="#000000" style="SolidLine" widthF="1"/>
                 <brush color="#000000" style="NoBrush"/>
             </shape>
-            <shape x2="820" type="Line" y1="260" y2="260" z="0" is_movable="1" closed="0" x1="380">
+            <shape y1="130" x2="430" y2="260" type="Line" x1="430" is_movable="1" closed="0" z="0">
                 <pen color="#000000" style="SolidLine" widthF="1"/>
                 <brush color="#000000" style="NoBrush"/>
             </shape>
@@ -319,7 +590,7 @@
                                 <name lang="fr">10- Lampes et dispositifs de signalisation</name>
                             </names>
                             <element name="en_60617_08_10_01.elmt">
-                                <definition hotspot_x="15" version="0.70" type="element" height="30" link_type="simple" hotspot_y="25" width="30">
+                                <definition link_type="simple" height="30" width="30" version="0.70" type="element" hotspot_y="25" hotspot_x="15">
                                     <uuid uuid="{1ff0241f-1ced-43bd-8cc1-d3a91501e4cb}"/>
                                     <names>
                                         <name lang="en">Lamp, general symbol</name>
@@ -331,10 +602,10 @@
                                     <informations>Author: The QElectroTech team
 License: see http://qelectrotech.org/wiki/doc/elements_license</informations>
                                     <description>
-                                        <input x="5" size="9" tagg="label" rotate="true" text="_" y="25"/>
-                                        <circle x="-10" style="line-style:normal;line-weight:normal;filling:none;color:black" antialias="false" diameter="20" y="-20"/>
-                                        <line x2="7" end2="none" y1="-3" length1="1.5" style="line-style:normal;line-weight:normal;filling:none;color:black" y2="-17" antialias="false" length2="1.5" end1="none" x1="-7"/>
-                                        <line x2="7" end2="none" y1="-17" length1="1.5" style="line-style:normal;line-weight:normal;filling:none;color:black" y2="-3" antialias="false" length2="1.5" end1="none" x1="-7"/>
+                                        <input rotate="true" tagg="label" size="9" x="5" y="25" text="_"/>
+                                        <circle diameter="20" style="line-style:normal;line-weight:normal;filling:none;color:black" x="-10" y="-20" antialias="false"/>
+                                        <line y1="-3" length1="1.5" length2="1.5" x2="7" style="line-style:normal;line-weight:normal;filling:none;color:black" end2="none" end1="none" y2="-17" x1="-7" antialias="false"/>
+                                        <line y1="-17" length1="1.5" length2="1.5" x2="7" style="line-style:normal;line-weight:normal;filling:none;color:black" end2="none" end1="none" y2="-3" x1="-7" antialias="false"/>
                                     </description>
                                 </definition>
                             </element>
@@ -391,7 +662,7 @@ License: see http://qelectrotech.org/wiki/doc/elements_license</informations>
                                 <name lang="fr">Fusibles</name>
                             </names>
                             <element name="sectionneur_3_fusibles+neutre.elmt">
-                                <definition hotspot_x="51" version="0.4" type="element" height="50" link_type="master" hotspot_y="24" width="90">
+                                <definition link_type="master" height="50" width="90" version="0.4" type="element" hotspot_y="24" hotspot_x="51">
                                     <uuid uuid="{E97E9426-3D2A-4762-9528-405BEDC34015}"/>
                                     <names>
                                         <name lang="ar">مفتاح عزل رباعي بثلاث مصهرات</name>
@@ -407,40 +678,40 @@ License: see http://qelectrotech.org/wiki/doc/elements_license</informations>
                                         <name lang="hu">Olvadóbiztosítós szakaszoló karos működtetésű N + 3F</name>
                                     </names>
                                     <kindInformations>
-                                        <kindInformation name="type" show="1">protection</kindInformation>
+                                        <kindInformation show="1" name="type">protection</kindInformation>
                                     </kindInformations>
                                     <informations>Author: The QElectroTech team
 License: see http://qelectrotech.org/wiki/doc/elements_license</informations>
                                     <description>
-                                        <polygon x2="30" y1="-10" style="line-style:normal;line-weight:normal;filling:none;color:black" y2="10" x3="30" antialias="true" y3="20" closed="false" x1="25"/>
-                                        <polygon x2="26.81" y1="-4.51" x4="28.19" style="line-style:normal;line-weight:normal;filling:none;color:black" y2="5.49" x3="30.69" antialias="true" y3="4.51" y4="-5.49" x1="24.31"/>
-                                        <line end2="circle" x2="-40" y1="-10" length1="1.5" style="line-style:normal;line-weight:thin;filling:none;color:black" y2="10" antialias="true" length2="1.5" end1="none" x1="-45"/>
-                                        <line end2="none" x2="32" y1="-10" length1="1.5" style="line-style:normal;line-weight:normal;filling:none;color:black" y2="-10" antialias="false" length2="1.5" end1="none" x1="28"/>
-                                        <line end2="none" x2="30" y1="-20" length1="1.5" style="line-style:normal;line-weight:normal;filling:none;color:black" y2="-10" antialias="false" length2="1.5" end1="none" x1="30"/>
-                                        <polygon x2="-10" y1="-10" style="line-style:normal;line-weight:normal;filling:none;color:black" y2="10" x3="-10" antialias="true" y3="20" closed="false" x1="-15"/>
-                                        <input x="50" size="9" tagg="label" text="_" y="0.5"/>
-                                        <polygon x2="-13.19" y1="-4.51" x4="-11.81" style="line-style:normal;line-weight:normal;filling:none;color:black" y2="5.49" x3="-9.31" antialias="true" y3="4.51" y4="-5.49" x1="-15.69"/>
-                                        <polygon x2="-30" y1="-10" style="line-style:normal;line-weight:normal;filling:none;color:black" y2="10" x3="-30" antialias="true" y3="20" closed="false" x1="-35"/>
-                                        <line end2="none" x2="-10" y1="-20" length1="1.5" style="line-style:normal;line-weight:normal;filling:none;color:black" y2="-10" antialias="false" length2="1.5" end1="none" x1="-10"/>
-                                        <polygon x2="10" y1="-10" style="line-style:normal;line-weight:normal;filling:none;color:black" y2="10" x3="10" antialias="true" y3="20" closed="false" x1="5"/>
-                                        <line end2="none" x2="-12" y1="-10" length1="1.5" style="line-style:normal;line-weight:normal;filling:none;color:black" y2="-10" antialias="false" length2="1.5" end1="none" x1="-8"/>
-                                        <polygon x2="6.81" y1="-4.51" x4="8.19" style="line-style:normal;line-weight:normal;filling:none;color:black" y2="5.49" x3="10.69" antialias="true" y3="4.51" y4="-5.49" x1="4.31"/>
-                                        <line end2="none" x2="12" y1="-10" length1="1.5" style="line-style:normal;line-weight:normal;filling:none;color:black" y2="-10" antialias="false" length2="1.5" end1="none" x1="8"/>
-                                        <line end2="none" x2="10" y1="-20" length1="1.5" style="line-style:normal;line-weight:normal;filling:none;color:black" y2="-10" antialias="false" length2="1.5" end1="none" x1="10"/>
-                                        <line end2="none" x2="-30" y1="-20" length1="1.5" style="line-style:normal;line-weight:normal;filling:none;color:black" y2="-10" antialias="false" length2="1.5" end1="none" x1="-30"/>
-                                        <line end2="none" x2="-32" y1="-10" length1="1.5" style="line-style:normal;line-weight:normal;filling:none;color:black" y2="-10" antialias="false" length2="1.5" end1="none" x1="-28"/>
-                                        <line end2="none" x2="-33" y1="0" length1="1.5" style="line-style:dashed;line-weight:thin;filling:none;color:black" y2="0" antialias="false" length2="1.5" end1="none" x1="-43"/>
-                                        <line end2="none" x2="-15" y1="0" length1="1.5" style="line-style:dashed;line-weight:thin;filling:none;color:black" y2="0" antialias="false" length2="1.5" end1="none" x1="-33"/>
-                                        <line end2="none" x2="5" y1="0" length1="1.5" style="line-style:dashed;line-weight:thin;filling:none;color:black" y2="0" antialias="false" length2="1.5" end1="none" x1="-11"/>
-                                        <line end2="none" x2="25" y1="0" length1="1.5" style="line-style:dashed;line-weight:thin;filling:none;color:black" y2="0" antialias="false" length2="1.5" end1="none" x1="10"/>
-                                        <terminal x="-30" orientation="n" y="-20"/>
-                                        <terminal x="-30" orientation="s" y="20"/>
-                                        <terminal x="10" orientation="s" y="20"/>
-                                        <terminal x="10" orientation="n" y="-20"/>
-                                        <terminal x="-10" orientation="n" y="-20"/>
-                                        <terminal x="-10" orientation="s" y="20"/>
-                                        <terminal x="30" orientation="s" y="20"/>
-                                        <terminal x="30" orientation="n" y="-20"/>
+                                        <polygon y1="-10" x2="30" style="line-style:normal;line-weight:normal;filling:none;color:black" x3="30" y2="10" y3="20" x1="25" closed="false" antialias="true"/>
+                                        <polygon y1="-4.51" x4="28.19" x2="26.81" style="line-style:normal;line-weight:normal;filling:none;color:black" x3="30.69" y2="5.49" y3="4.51" y4="-5.49" x1="24.31" antialias="true"/>
+                                        <line y1="-10" length1="1.5" length2="1.5" x2="-40" style="line-style:normal;line-weight:thin;filling:none;color:black" end2="circle" end1="none" y2="10" x1="-45" antialias="true"/>
+                                        <line y1="-10" length1="1.5" length2="1.5" x2="32" style="line-style:normal;line-weight:normal;filling:none;color:black" end2="none" end1="none" y2="-10" x1="28" antialias="false"/>
+                                        <line y1="-20" length1="1.5" length2="1.5" x2="30" style="line-style:normal;line-weight:normal;filling:none;color:black" end2="none" end1="none" y2="-10" x1="30" antialias="false"/>
+                                        <polygon y1="-10" x2="-10" style="line-style:normal;line-weight:normal;filling:none;color:black" x3="-10" y2="10" y3="20" x1="-15" closed="false" antialias="true"/>
+                                        <input tagg="label" size="9" x="50" y="0.5" text="_"/>
+                                        <polygon y1="-4.51" x4="-11.81" x2="-13.19" style="line-style:normal;line-weight:normal;filling:none;color:black" x3="-9.31" y2="5.49" y3="4.51" y4="-5.49" x1="-15.69" antialias="true"/>
+                                        <polygon y1="-10" x2="-30" style="line-style:normal;line-weight:normal;filling:none;color:black" x3="-30" y2="10" y3="20" x1="-35" closed="false" antialias="true"/>
+                                        <line y1="-20" length1="1.5" length2="1.5" x2="-10" style="line-style:normal;line-weight:normal;filling:none;color:black" end2="none" end1="none" y2="-10" x1="-10" antialias="false"/>
+                                        <polygon y1="-10" x2="10" style="line-style:normal;line-weight:normal;filling:none;color:black" x3="10" y2="10" y3="20" x1="5" closed="false" antialias="true"/>
+                                        <line y1="-10" length1="1.5" length2="1.5" x2="-12" style="line-style:normal;line-weight:normal;filling:none;color:black" end2="none" end1="none" y2="-10" x1="-8" antialias="false"/>
+                                        <polygon y1="-4.51" x4="8.19" x2="6.81" style="line-style:normal;line-weight:normal;filling:none;color:black" x3="10.69" y2="5.49" y3="4.51" y4="-5.49" x1="4.31" antialias="true"/>
+                                        <line y1="-10" length1="1.5" length2="1.5" x2="12" style="line-style:normal;line-weight:normal;filling:none;color:black" end2="none" end1="none" y2="-10" x1="8" antialias="false"/>
+                                        <line y1="-20" length1="1.5" length2="1.5" x2="10" style="line-style:normal;line-weight:normal;filling:none;color:black" end2="none" end1="none" y2="-10" x1="10" antialias="false"/>
+                                        <line y1="-20" length1="1.5" length2="1.5" x2="-30" style="line-style:normal;line-weight:normal;filling:none;color:black" end2="none" end1="none" y2="-10" x1="-30" antialias="false"/>
+                                        <line y1="-10" length1="1.5" length2="1.5" x2="-32" style="line-style:normal;line-weight:normal;filling:none;color:black" end2="none" end1="none" y2="-10" x1="-28" antialias="false"/>
+                                        <line y1="0" length1="1.5" length2="1.5" x2="-33" style="line-style:dashed;line-weight:thin;filling:none;color:black" end2="none" end1="none" y2="0" x1="-43" antialias="false"/>
+                                        <line y1="0" length1="1.5" length2="1.5" x2="-15" style="line-style:dashed;line-weight:thin;filling:none;color:black" end2="none" end1="none" y2="0" x1="-33" antialias="false"/>
+                                        <line y1="0" length1="1.5" length2="1.5" x2="5" style="line-style:dashed;line-weight:thin;filling:none;color:black" end2="none" end1="none" y2="0" x1="-11" antialias="false"/>
+                                        <line y1="0" length1="1.5" length2="1.5" x2="25" style="line-style:dashed;line-weight:thin;filling:none;color:black" end2="none" end1="none" y2="0" x1="10" antialias="false"/>
+                                        <terminal orientation="n" x="-30" y="-20"/>
+                                        <terminal orientation="s" x="-30" y="20"/>
+                                        <terminal orientation="s" x="10" y="20"/>
+                                        <terminal orientation="n" x="10" y="-20"/>
+                                        <terminal orientation="n" x="-10" y="-20"/>
+                                        <terminal orientation="s" x="-10" y="20"/>
+                                        <terminal orientation="s" x="30" y="20"/>
+                                        <terminal orientation="n" x="30" y="-20"/>
                                     </description>
                                 </definition>
                             </element>
@@ -493,7 +764,7 @@ License: see http://qelectrotech.org/wiki/doc/elements_license</informations>
                                     <name lang="fr">Protections</name>
                                 </names>
                                 <element name="contact_fusible_no_esclave.elmt">
-                                    <definition hotspot_x="22" version="0.4" ic="true" type="element" height="50" link_type="slave" hotspot_y="25" width="30">
+                                    <definition link_type="slave" height="50" ic="true" width="30" version="0.4" type="element" hotspot_y="25" hotspot_x="22">
                                         <uuid uuid="{F237D4BD-1B50-4ADB-AA9E-DA7AE2B830FB}"/>
                                         <names>
                                             <name lang="el">Θερμικό, ανοικτό</name>
@@ -507,28 +778,28 @@ License: see http://qelectrotech.org/wiki/doc/elements_license</informations>
                                             <name lang="cs">Signální kontakt pojistky (NO)</name>
                                         </names>
                                         <kindInformations>
-                                            <kindInformation name="number" show="1">1</kindInformation>
-                                            <kindInformation name="type" show="1">simple</kindInformation>
-                                            <kindInformation name="state" show="1">NO</kindInformation>
+                                            <kindInformation show="1" name="number">1</kindInformation>
+                                            <kindInformation show="1" name="type">simple</kindInformation>
+                                            <kindInformation show="1" name="state">NO</kindInformation>
                                         </kindInformations>
                                         <informations>Author: The QElectroTech team
 License: see http://qelectrotech.org/wiki/doc/elements_license</informations>
                                         <description>
-                                            <line end2="none" x2="-2.688" y1="0" length1="1.5" style="line-style:dashed;line-weight:thin;filling:none;color:black" y2="0" antialias="false" length2="1.5" end1="none" x1="-10.288"/>
-                                            <input x="-13" size="4" tagg="none" text="14" y="16"/>
-                                            <input x="-13" size="4" tagg="none" text="11" y="-16"/>
-                                            <input x="1" size="9" tagg="label" text="_" y="0.5"/>
-                                            <polygon x2="0" y1="-10" style="line-style:normal;line-weight:normal;filling:none;color:black" y2="10" x3="0" antialias="true" y3="20" closed="false" x1="-5"/>
-                                            <line end2="none" x2="0" y1="-20" length1="1.5" style="line-style:normal;line-weight:normal;filling:none;color:black" y2="-10" antialias="false" length2="1.5" end1="none" x1="0"/>
-                                            <rect x="-17" height="16" style="line-style:normal;line-weight:normal;filling:none;color:black" antialias="false" y="-8" width="6"/>
-                                            <line end2="none" x2="-14" y1="-9.94419" length1="1.5" style="line-style:normal;line-weight:normal;filling:none;color:black" y2="9.93953" antialias="false" length2="1.5" end1="none" x1="-14"/>
-                                            <terminal x="0" orientation="s" y="20"/>
-                                            <terminal x="0" orientation="n" y="-20"/>
+                                            <line y1="0" length1="1.5" length2="1.5" x2="-2.688" style="line-style:dashed;line-weight:thin;filling:none;color:black" end2="none" end1="none" y2="0" x1="-10.288" antialias="false"/>
+                                            <input tagg="none" size="4" x="-13" y="16" text="14"/>
+                                            <input tagg="none" size="4" x="-13" y="-16" text="11"/>
+                                            <input tagg="label" size="9" x="1" y="0.5" text="_"/>
+                                            <polygon y1="-10" x2="0" style="line-style:normal;line-weight:normal;filling:none;color:black" x3="0" y2="10" y3="20" x1="-5" closed="false" antialias="true"/>
+                                            <line y1="-20" length1="1.5" length2="1.5" x2="0" style="line-style:normal;line-weight:normal;filling:none;color:black" end2="none" end1="none" y2="-10" x1="0" antialias="false"/>
+                                            <rect style="line-style:normal;line-weight:normal;filling:none;color:black" height="16" x="-17" width="6" y="-8" antialias="false"/>
+                                            <line y1="-9.94419" length1="1.5" length2="1.5" x2="-14" style="line-style:normal;line-weight:normal;filling:none;color:black" end2="none" end1="none" y2="9.93953" x1="-14" antialias="false"/>
+                                            <terminal orientation="s" x="0" y="20"/>
+                                            <terminal orientation="n" x="0" y="-20"/>
                                         </description>
                                     </definition>
                                 </element>
                                 <element name="contact_fusile_nc_esclave.elmt">
-                                    <definition hotspot_x="20" version="0.4" ic="true" type="element" height="50" link_type="slave" hotspot_y="25" width="30">
+                                    <definition link_type="slave" height="50" ic="true" width="30" version="0.4" type="element" hotspot_y="25" hotspot_x="20">
                                         <uuid uuid="{2B0984C2-70E4-48AA-A3AD-2D91489EE8E5}"/>
                                         <names>
                                             <name lang="en">Fuse NC</name>
@@ -540,29 +811,114 @@ License: see http://qelectrotech.org/wiki/doc/elements_license</informations>
                                             <name lang="cs">Signální kontakt pojistky (NC)</name>
                                         </names>
                                         <kindInformations>
-                                            <kindInformation name="number" show="1">1</kindInformation>
-                                            <kindInformation name="type" show="1">simple</kindInformation>
-                                            <kindInformation name="state" show="1">NC</kindInformation>
+                                            <kindInformation show="1" name="number">1</kindInformation>
+                                            <kindInformation show="1" name="type">simple</kindInformation>
+                                            <kindInformation show="1" name="state">NC</kindInformation>
                                         </kindInformations>
                                         <informations>Author: The QElectroTech team
 License: see http://qelectrotech.org/wiki/doc/elements_license</informations>
                                         <description>
-                                            <line end2="none" x2="3.21081" y1="0" length1="1.5" style="line-style:dashed;line-weight:thin;filling:none;color:black" y2="0" antialias="false" length2="1.5" end1="none" x1="-10.1946"/>
-                                            <input x="-13" size="4" tagg="none" text="12" y="16"/>
-                                            <input x="-13" size="4" tagg="none" text="11" y="-16"/>
-                                            <polygon x2="0" y1="20" style="line-style:normal;line-weight:normal;filling:none;color:black" y2="10" x3="6" antialias="true" y3="-10" closed="false" x1="0"/>
-                                            <line end2="none" x2="7" y1="-9" length1="1.5" style="line-style:normal;line-weight:normal;filling:none;color:black" y2="-9" antialias="false" length2="1.5" end1="none" x1="0"/>
-                                            <line end2="none" x2="0" y1="-20" length1="1.5" style="line-style:normal;line-weight:normal;filling:none;color:black" y2="-9" antialias="false" length2="1.5" end1="none" x1="0"/>
-                                            <input x="8" size="9" tagg="label" text="_" y="0.5"/>
-                                            <rect x="-17" height="16" style="line-style:normal;line-weight:normal;filling:none;color:black" antialias="false" y="-8" width="6"/>
-                                            <line end2="none" x2="-14" y1="-10" length1="1.5" style="line-style:normal;line-weight:normal;filling:none;color:black" y2="10" antialias="false" length2="1.5" end1="none" x1="-14"/>
-                                            <terminal x="0" orientation="n" y="-20"/>
-                                            <terminal x="0" orientation="s" y="20"/>
+                                            <line y1="0" length1="1.5" length2="1.5" x2="3.21081" style="line-style:dashed;line-weight:thin;filling:none;color:black" end2="none" end1="none" y2="0" x1="-10.1946" antialias="false"/>
+                                            <input tagg="none" size="4" x="-13" y="16" text="12"/>
+                                            <input tagg="none" size="4" x="-13" y="-16" text="11"/>
+                                            <polygon y1="20" x2="0" style="line-style:normal;line-weight:normal;filling:none;color:black" x3="6" y2="10" y3="-10" x1="0" closed="false" antialias="true"/>
+                                            <line y1="-9" length1="1.5" length2="1.5" x2="7" style="line-style:normal;line-weight:normal;filling:none;color:black" end2="none" end1="none" y2="-9" x1="0" antialias="false"/>
+                                            <line y1="-20" length1="1.5" length2="1.5" x2="0" style="line-style:normal;line-weight:normal;filling:none;color:black" end2="none" end1="none" y2="-9" x1="0" antialias="false"/>
+                                            <input tagg="label" size="9" x="8" y="0.5" text="_"/>
+                                            <rect style="line-style:normal;line-weight:normal;filling:none;color:black" height="16" x="-17" width="6" y="-8" antialias="false"/>
+                                            <line y1="-10" length1="1.5" length2="1.5" x2="-14" style="line-style:normal;line-weight:normal;filling:none;color:black" end2="none" end1="none" y2="10" x1="-14" antialias="false"/>
+                                            <terminal orientation="n" x="0" y="-20"/>
+                                            <terminal orientation="s" x="0" y="20"/>
                                         </description>
                                     </definition>
                                 </element>
                             </category>
                         </category>
+                    </category>
+                    <category name="120_cables_wiring">
+                        <names>
+                            <name lang="ru">Кабели и провода</name>
+                            <name lang="es">Cables y alambres</name>
+                            <name lang="el">Καλώδια και καλωδίωση</name>
+                            <name lang="ja">ケーブルと配線</name>
+                            <name lang="fr">Câbles et filerie</name>
+                            <name lang="pl">Przewody i kable</name>
+                            <name lang="en">Cables and wiring</name>
+                            <name lang="it">Cavi e collegamenti</name>
+                            <name lang="cs">Kabely a vodiče</name>
+                            <name lang="nl">Kabels en draden</name>
+                            <name lang="hu">Kábelek és vezetékek</name>
+                            <name lang="de">Kabel und Verdrahtung</name>
+                            <name lang="da">Kabler og ledninger</name>
+                        </names>
+                        <element name="cable6.elmt">
+                            <definition link_type="simple" height="20" width="60" version="0.51" type="element" hotspot_y="3" hotspot_x="29">
+                                <uuid uuid="{5f981421-4c54-4cd5-929e-7f77dab94fef}"/>
+                                <names>
+                                    <name lang="It">Cavo ? 3G</name>
+                                    <name lang="fr">Cable 3G</name>
+                                    <name lang="es">Cable 3G</name>
+                                    <name lang="pl">Przewód trójżyłowy</name>
+                                    <name lang="cs">Kabel 3G</name>
+                                    <name lang="hu">Kábel 2 + PE</name>
+                                </names>
+                                <informations>Author: The QElectroTech team
+License: see http://qelectrotech.org/wiki/doc/elements_license</informations>
+                                <description>
+                                    <line y1="7.95" length1="1.5" length2="1.5" x2="-19.05" style="line-style:normal;line-weight:normal;filling:none;color:black" end2="none" end1="none" y2="11.95" x1="-23.05" antialias="true"/>
+                                    <line y1="7.95" length1="1.5" length2="1.5" x2="0.95" style="line-style:normal;line-weight:normal;filling:none;color:black" end2="none" end1="none" y2="11.95" x1="-3.05" antialias="true"/>
+                                    <text size="4" x="0" y="9" text="1"/>
+                                    <text size="4" x="21" y="9" text="2"/>
+                                    <line y1="8" length1="1.5" length2="1.5" x2="21" style="line-style:normal;line-weight:normal;filling:none;color:black" end2="none" end1="none" y2="12" x1="17" antialias="true"/>
+                                    <input rotate="true" tagg="label" size="6" x="-72" y="2.5" text="type?&#xa;3G_ mm²"/>
+                                    <line y1="10" length1="1.5" length2="1.5" x2="20" style="line-style:normal;line-weight:normal;filling:none;color:black" end2="none" end1="none" y2="10" x1="-21" antialias="false"/>
+                                    <text size="4" x="-21" y="9" text="GNYE"/>
+                                    <input rotate="true" tagg="none" size="5" x="-52" y="1" text=""/>
+                                </description>
+                            </definition>
+                        </element>
+                    </category>
+                    <category name="114_connections">
+                        <names>
+                            <name lang="ru">Соединения</name>
+                            <name lang="el">Ενώσεις</name>
+                            <name lang="es">Conexiones</name>
+                            <name lang="ja">接続</name>
+                            <name lang="fr">Connections</name>
+                            <name lang="pl">Połączenia</name>
+                            <name lang="en">Connections</name>
+                            <name lang="it">Collegamenti</name>
+                            <name lang="cs">Spojení</name>
+                            <name lang="nl">Verbindingen</name>
+                            <name lang="hu">Csatlakozások</name>
+                            <name lang="de">Verbindungen</name>
+                            <name lang="da">Forbindelser</name>
+                        </names>
+                        <element name="bod.elmt">
+                            <definition link_type="simple" height="20" width="20" version="0.90" type="element" hotspot_y="9" hotspot_x="9">
+                                <uuid uuid="{1eefef79-1c23-413b-873a-3d84f4aa5c25}"/>
+                                <names>
+                                    <name lang="fr">connexion</name>
+                                    <name lang="en">connection</name>
+                                    <name lang="cs">Bod</name>
+                                    <name lang="de">Verbindung</name>
+                                    <name lang="hu">Keresztezés pont alakzatban</name>
+                                </names>
+                                <elementInformations/>
+                                <informations/>
+                                <description>
+                                    <circle diameter="4" style="line-style:normal;line-weight:normal;filling:black;color:black" x="-2" y="-2" antialias="false"/>
+                                    <dynamic_text font="Sans Serif,9,-1,5,50,0,0,0,0,0" rotation="0" text_from="ElementInfo" uuid="{2aef950d-c62d-4d3c-939b-3e81653d5244}" Halignment="AlignLeft" x="-11" y="-14.5" frame="false" Valignment="AlignTop" text_width="-1" keep_visual_rotation="false" z="2">
+                                        <text/>
+                                        <info_name>label</info_name>
+                                    </dynamic_text>
+                                    <terminal orientation="e" uuid="{9cc2fc56-976f-49ac-a0f8-63eb85f716c2}" x="2" y="0" type="Generic" name=""/>
+                                    <terminal orientation="w" uuid="{3c4b4f5e-98a2-4daa-9a47-40b8e018166e}" x="-2" y="0" type="Generic" name=""/>
+                                    <terminal orientation="s" uuid="{8d99aa04-def0-4573-a0e8-41229ed2f1dc}" x="0" y="2" type="Generic" name=""/>
+                                    <terminal orientation="n" uuid="{f2e49ff6-ee59-492e-a6ad-82708479afd6}" x="0" y="-2" type="Generic" name=""/>
+                                </description>
+                            </definition>
+                        </element>
                     </category>
                 </category>
                 <category name="20_manufacturers_articles">
@@ -628,7 +984,7 @@ License: see http://qelectrotech.org/wiki/doc/elements_license</informations>
                                         <name lang="fr">System</name>
                                     </names>
                                     <element name="wago_0750-0601-0000-0000.elmt">
-                                        <definition hotspot_x="364" version="0.90" type="element" link_type="simple" height="110" hotspot_y="55" width="730">
+                                        <definition link_type="simple" height="110" width="730" version="0.90" type="element" hotspot_y="55" hotspot_x="364">
                                             <names>
                                                 <name lang="en">750-601</name>
                                                 <name lang="it">750-601</name>
@@ -643,65 +999,65 @@ License: see http://qelectrotech.org/wiki/doc/elements_license</informations>
                                                 <name lang="es">750-601</name>
                                             </names>
                                             <elementInformations>
-                                                <elementInformation name="description" show="1">Field-Supply, Fuse</elementInformation>
-                                                <elementInformation name="manufacturer" show="1">WAGO</elementInformation>
-                                                <elementInformation name="designation" show="1">750-601</elementInformation>
+                                                <elementInformation show="1" name="description">Field-Supply, Fuse</elementInformation>
+                                                <elementInformation show="1" name="manufacturer">WAGO</elementInformation>
+                                                <elementInformation show="1" name="designation">750-601</elementInformation>
                                             </elementInformations>
                                             <informations>Author: plc-user for QElectroTech
 License:see https://qelectrotech.org/wiki_new/doc/elements_license
     </informations>
                                             <description>
-                                                <rect x="-360" style="line-style:normal;line-weight:normal;filling:none;color:black" height="90" rx="0" antialias="false" y="-40" width="720" ry="0"/>
-                                                <line x2="40" end2="none" y1="10" style="line-style:normal;line-weight:normal;filling:none;color:black" length1="1.5" y2="-38" antialias="false" length2="1.5" end1="none" x1="40"/>
-                                                <line x2="-40" end2="none" y1="-8.5" style="line-style:normal;line-weight:normal;filling:none;color:black" length1="1.5" y2="-38" antialias="false" length2="1.5" end1="circle" x1="-40"/>
-                                                <line x2="358" end2="none" y1="30" style="line-style:normal;line-weight:normal;filling:none;color:black" length1="1.5" y2="30" antialias="false" length2="1.5" end1="none" x1="200"/>
-                                                <line x2="120" end2="none" y1="11" style="line-style:normal;line-weight:normal;filling:none;color:black" length1="1.5" y2="-37" antialias="false" length2="1.5" end1="circle" x1="120"/>
-                                                <line x2="280" end2="none" y1="31.5" style="line-style:normal;line-weight:normal;filling:none;color:black" length1="1.5" y2="-37" antialias="false" length2="1.5" end1="circle" x1="280"/>
-                                                <line x2="-120" end2="none" y1="-10" style="line-style:normal;line-weight:normal;filling:none;color:black" length1="1.5" y2="-38" antialias="false" length2="1.5" end1="none" x1="-120"/>
-                                                <circle x="-42.5" style="line-style:normal;line-weight:normal;filling:white;color:black" antialias="true" diameter="5" y="-42.5"/>
-                                                <circle x="-122.5" style="line-style:normal;line-weight:normal;filling:white;color:black" antialias="true" diameter="5" y="-42.5"/>
-                                                <circle x="277.5" style="line-style:normal;line-weight:normal;filling:white;color:black" antialias="true" diameter="5" y="-42.5"/>
-                                                <circle x="197.5" style="line-style:normal;line-weight:normal;filling:white;color:black" antialias="true" diameter="5" y="-42.5"/>
-                                                <circle x="117.5" style="line-style:normal;line-weight:normal;filling:white;color:black" antialias="true" diameter="5" y="-42.5"/>
-                                                <circle x="37.5" style="line-style:normal;line-weight:normal;filling:white;color:black" antialias="true" diameter="5" y="-42.5"/>
-                                                <line x2="358" end2="none" y1="10" style="line-style:normal;line-weight:normal;filling:none;color:black" length1="1.5" y2="10" antialias="false" length2="1.5" end1="none" x1="40"/>
-                                                <line x2="200" end2="none" y1="30" style="line-style:normal;line-weight:normal;filling:none;color:black" length1="1.5" y2="-38" antialias="false" length2="1.5" end1="none" x1="200"/>
-                                                <line x2="358" end2="none" y1="-10" style="line-style:normal;line-weight:normal;filling:none;color:black" length1="1.5" y2="-10" antialias="false" length2="1.5" end1="none" x1="-120"/>
-                                                <text rotation="0" x="-330" color="#000000" text="WAGO 750-601" y="45" font="Sans Serif,9,-1,5,50,0,0,0,0,0"/>
-                                                <text rotation="0" x="281" color="#000000" text="PE" y="-22" font="Sans Serif,9,-1,5,50,0,0,0,0,0"/>
-                                                <text rotation="0" x="201" color="#000000" text="PE" y="-22" font="Sans Serif,9,-1,5,50,0,0,0,0,0"/>
-                                                <text rotation="0" x="123" color="#000000" text="0V" y="-22" font="Sans Serif,9,-1,5,50,0,0,0,0,0"/>
-                                                <text rotation="0" x="43" color="#000000" text="0V" y="-22" font="Sans Serif,9,-1,5,50,0,0,0,0,0"/>
-                                                <text rotation="0" x="-39" color="#000000" text="DC24V" y="-22" font="Sans Serif,9,-1,5,50,0,0,0,0,0"/>
-                                                <text rotation="0" x="-119" color="#000000" text="DC24V" y="-22" font="Sans Serif,9,-1,5,50,0,0,0,0,0"/>
-                                                <line x2="360" end2="none" y1="12.5" style="line-style:normal;line-weight:normal;filling:none;color:black" length1="1.5" y2="27.5" antialias="false" length2="1.5" end1="none" x1="360"/>
-                                                <text rotation="0" x="-115" color="#000000" text="1" y="-42" font="Sans Serif,5,-1,5,50,0,0,0,0,0"/>
-                                                <text rotation="0" x="-35" color="#000000" text="4" y="-42" font="Sans Serif,5,-1,5,50,0,0,0,0,0"/>
-                                                <text rotation="0" x="45" color="#000000" text="2" y="-42" font="Sans Serif,5,-1,5,50,0,0,0,0,0"/>
-                                                <text rotation="0" x="125" color="#000000" text="5" y="-42" font="Sans Serif,5,-1,5,50,0,0,0,0,0"/>
-                                                <text rotation="0" x="205" color="#000000" text="3" y="-42" font="Sans Serif,5,-1,5,50,0,0,0,0,0"/>
-                                                <text rotation="0" x="285" color="#000000" text="6" y="-42" font="Sans Serif,5,-1,5,50,0,0,0,0,0"/>
-                                                <text rotation="0" x="-138" color="#000000" text="Field-Supply, Fuse" y="45" font="Sans Serif,9,-1,5,50,0,0,0,0,0"/>
-                                                <rect x="-18" style="line-style:normal;line-weight:normal;filling:none;color:black" height="12" rx="0" antialias="false" y="-16" width="36" ry="0"/>
-                                                <arc x="360" angle="180" style="line-style:normal;line-weight:normal;filling:none;color:black" height="5" antialias="true" y="-12.5" width="5" start="90"/>
-                                                <arc x="360" angle="180" style="line-style:normal;line-weight:normal;filling:none;color:black" height="5" antialias="true" y="7.5" width="5" start="90"/>
-                                                <arc x="360" angle="180" style="line-style:normal;line-weight:normal;filling:none;color:black" height="5" antialias="true" y="27.5" width="5" start="90"/>
-                                                <dynamic_text rotation="0" keep_visual_rotation="true" Halignment="AlignLeft" x="220" Valignment="AlignTop" uuid="{fb78687b-a21b-4d21-ba44-8a852468668d}" z="48" text_from="ElementInfo" frame="false" y="29.5" text_width="-1" font="Sans Serif,9,-1,5,50,0,0,0,0,0">
+                                                <rect style="line-style:normal;line-weight:normal;filling:none;color:black" height="90" x="-360" width="720" y="-40" rx="0" antialias="false" ry="0"/>
+                                                <line y1="10" length1="1.5" length2="1.5" x2="40" style="line-style:normal;line-weight:normal;filling:none;color:black" end2="none" end1="none" y2="-38" x1="40" antialias="false"/>
+                                                <line y1="-8.5" length1="1.5" length2="1.5" x2="-40" style="line-style:normal;line-weight:normal;filling:none;color:black" end2="none" end1="circle" y2="-38" x1="-40" antialias="false"/>
+                                                <line y1="30" length1="1.5" length2="1.5" x2="358" style="line-style:normal;line-weight:normal;filling:none;color:black" end2="none" end1="none" y2="30" x1="200" antialias="false"/>
+                                                <line y1="11" length1="1.5" length2="1.5" x2="120" style="line-style:normal;line-weight:normal;filling:none;color:black" end2="none" end1="circle" y2="-37" x1="120" antialias="false"/>
+                                                <line y1="31.5" length1="1.5" length2="1.5" x2="280" style="line-style:normal;line-weight:normal;filling:none;color:black" end2="none" end1="circle" y2="-37" x1="280" antialias="false"/>
+                                                <line y1="-10" length1="1.5" length2="1.5" x2="-120" style="line-style:normal;line-weight:normal;filling:none;color:black" end2="none" end1="none" y2="-38" x1="-120" antialias="false"/>
+                                                <circle diameter="5" style="line-style:normal;line-weight:normal;filling:white;color:black" x="-42.5" y="-42.5" antialias="true"/>
+                                                <circle diameter="5" style="line-style:normal;line-weight:normal;filling:white;color:black" x="-122.5" y="-42.5" antialias="true"/>
+                                                <circle diameter="5" style="line-style:normal;line-weight:normal;filling:white;color:black" x="277.5" y="-42.5" antialias="true"/>
+                                                <circle diameter="5" style="line-style:normal;line-weight:normal;filling:white;color:black" x="197.5" y="-42.5" antialias="true"/>
+                                                <circle diameter="5" style="line-style:normal;line-weight:normal;filling:white;color:black" x="117.5" y="-42.5" antialias="true"/>
+                                                <circle diameter="5" style="line-style:normal;line-weight:normal;filling:white;color:black" x="37.5" y="-42.5" antialias="true"/>
+                                                <line y1="10" length1="1.5" length2="1.5" x2="358" style="line-style:normal;line-weight:normal;filling:none;color:black" end2="none" end1="none" y2="10" x1="40" antialias="false"/>
+                                                <line y1="30" length1="1.5" length2="1.5" x2="200" style="line-style:normal;line-weight:normal;filling:none;color:black" end2="none" end1="none" y2="-38" x1="200" antialias="false"/>
+                                                <line y1="-10" length1="1.5" length2="1.5" x2="358" style="line-style:normal;line-weight:normal;filling:none;color:black" end2="none" end1="none" y2="-10" x1="-120" antialias="false"/>
+                                                <text font="Sans Serif,9,-1,5,50,0,0,0,0,0" color="#000000" rotation="0" x="-330" y="45" text="WAGO 750-601"/>
+                                                <text font="Sans Serif,9,-1,5,50,0,0,0,0,0" color="#000000" rotation="0" x="281" y="-22" text="PE"/>
+                                                <text font="Sans Serif,9,-1,5,50,0,0,0,0,0" color="#000000" rotation="0" x="201" y="-22" text="PE"/>
+                                                <text font="Sans Serif,9,-1,5,50,0,0,0,0,0" color="#000000" rotation="0" x="123" y="-22" text="0V"/>
+                                                <text font="Sans Serif,9,-1,5,50,0,0,0,0,0" color="#000000" rotation="0" x="43" y="-22" text="0V"/>
+                                                <text font="Sans Serif,9,-1,5,50,0,0,0,0,0" color="#000000" rotation="0" x="-39" y="-22" text="DC24V"/>
+                                                <text font="Sans Serif,9,-1,5,50,0,0,0,0,0" color="#000000" rotation="0" x="-119" y="-22" text="DC24V"/>
+                                                <line y1="12.5" length1="1.5" length2="1.5" x2="360" style="line-style:normal;line-weight:normal;filling:none;color:black" end2="none" end1="none" y2="27.5" x1="360" antialias="false"/>
+                                                <text font="Sans Serif,5,-1,5,50,0,0,0,0,0" color="#000000" rotation="0" x="-115" y="-42" text="1"/>
+                                                <text font="Sans Serif,5,-1,5,50,0,0,0,0,0" color="#000000" rotation="0" x="-35" y="-42" text="4"/>
+                                                <text font="Sans Serif,5,-1,5,50,0,0,0,0,0" color="#000000" rotation="0" x="45" y="-42" text="2"/>
+                                                <text font="Sans Serif,5,-1,5,50,0,0,0,0,0" color="#000000" rotation="0" x="125" y="-42" text="5"/>
+                                                <text font="Sans Serif,5,-1,5,50,0,0,0,0,0" color="#000000" rotation="0" x="205" y="-42" text="3"/>
+                                                <text font="Sans Serif,5,-1,5,50,0,0,0,0,0" color="#000000" rotation="0" x="285" y="-42" text="6"/>
+                                                <text font="Sans Serif,9,-1,5,50,0,0,0,0,0" color="#000000" rotation="0" x="-138" y="45" text="Field-Supply, Fuse"/>
+                                                <rect style="line-style:normal;line-weight:normal;filling:none;color:black" height="12" x="-18" width="36" y="-16" rx="0" antialias="false" ry="0"/>
+                                                <arc style="line-style:normal;line-weight:normal;filling:none;color:black" start="90" height="5" x="360" width="5" y="-12.5" angle="180" antialias="true"/>
+                                                <arc style="line-style:normal;line-weight:normal;filling:none;color:black" start="90" height="5" x="360" width="5" y="7.5" angle="180" antialias="true"/>
+                                                <arc style="line-style:normal;line-weight:normal;filling:none;color:black" start="90" height="5" x="360" width="5" y="27.5" angle="180" antialias="true"/>
+                                                <dynamic_text font="Sans Serif,9,-1,5,50,0,0,0,0,0" rotation="0" text_from="ElementInfo" uuid="{fb78687b-a21b-4d21-ba44-8a852468668d}" Halignment="AlignLeft" x="220" y="29.5" frame="false" Valignment="AlignTop" text_width="-1" keep_visual_rotation="true" z="48">
                                                     <text/>
                                                     <info_name>label</info_name>
                                                 </dynamic_text>
-                                                <dynamic_text rotation="0" keep_visual_rotation="true" Halignment="AlignLeft" x="-20" Valignment="AlignTop" uuid="{85bc547a-8f8b-4a2f-8c82-8fe2658f7a9b}" z="59" text_from="UserText" frame="false" y="0" text_width="-1" font="Sans Serif,9,-1,5,0,0,0,0,0,0,normal">
+                                                <dynamic_text font="Sans Serif,9,-1,5,0,0,0,0,0,0,normal" rotation="0" text_from="UserText" uuid="{85bc547a-8f8b-4a2f-8c82-8fe2658f7a9b}" Halignment="AlignLeft" x="-20" y="0" frame="false" Valignment="AlignTop" text_width="-1" keep_visual_rotation="true" z="59">
                                                     <text>_.__ A</text>
                                                 </dynamic_text>
-                                                <terminal type="Generic" x="360" uuid="{036c37a3-465f-4cac-b5cf-9113acacd6f2}" orientation="e" name="POW.out.-" y="10"/>
-                                                <terminal type="Generic" x="200" uuid="{87d67ce1-1d74-4de1-8d68-41bcd894f456}" orientation="n" name="" y="-40"/>
-                                                <terminal type="Generic" x="360" uuid="{628334a6-39a6-448c-ac89-3529fb098ab2}" orientation="e" name="POW.out.+" y="-10"/>
-                                                <terminal type="Generic" x="360" uuid="{95b158ea-16a5-445f-a9fc-dcbf31b27cc4}" orientation="e" name="POW.out.PE" y="30"/>
-                                                <terminal type="Generic" x="-40" uuid="{5654e2fc-17e9-4870-a7be-a4f40ccfd682}" orientation="n" name="" y="-40"/>
-                                                <terminal type="Generic" x="120" uuid="{1ef462a2-bef8-4892-86e6-6c7ab1964177}" orientation="n" name="" y="-40"/>
-                                                <terminal type="Generic" x="280" uuid="{1743f1b7-a549-4894-a889-8dda8e23c78d}" orientation="n" name="" y="-40"/>
-                                                <terminal type="Generic" x="40" uuid="{bca9201a-786f-4dcc-bd34-5242543a37a4}" orientation="n" name="" y="-40"/>
-                                                <terminal type="Generic" x="-120" uuid="{52864a31-f986-4ff9-a14d-b3d1e9908c9d}" orientation="n" name="" y="-40"/>
+                                                <terminal orientation="e" uuid="{036c37a3-465f-4cac-b5cf-9113acacd6f2}" x="360" y="10" type="Generic" name="POW.out.-"/>
+                                                <terminal orientation="n" uuid="{87d67ce1-1d74-4de1-8d68-41bcd894f456}" x="200" y="-40" type="Generic" name=""/>
+                                                <terminal orientation="e" uuid="{628334a6-39a6-448c-ac89-3529fb098ab2}" x="360" y="-10" type="Generic" name="POW.out.+"/>
+                                                <terminal orientation="e" uuid="{95b158ea-16a5-445f-a9fc-dcbf31b27cc4}" x="360" y="30" type="Generic" name="POW.out.PE"/>
+                                                <terminal orientation="n" uuid="{5654e2fc-17e9-4870-a7be-a4f40ccfd682}" x="-40" y="-40" type="Generic" name=""/>
+                                                <terminal orientation="n" uuid="{1ef462a2-bef8-4892-86e6-6c7ab1964177}" x="120" y="-40" type="Generic" name=""/>
+                                                <terminal orientation="n" uuid="{1743f1b7-a549-4894-a889-8dda8e23c78d}" x="280" y="-40" type="Generic" name=""/>
+                                                <terminal orientation="n" uuid="{bca9201a-786f-4dcc-bd34-5242543a37a4}" x="40" y="-40" type="Generic" name=""/>
+                                                <terminal orientation="n" uuid="{52864a31-f986-4ff9-a14d-b3d1e9908c9d}" x="-120" y="-40" type="Generic" name=""/>
                                             </description>
                                         </definition>
                                     </element>
