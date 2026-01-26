@@ -1,10 +1,141 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Elo Public</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elo Public - Wiring Diagrams</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        header {
+            background: #f5f5f5;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+        }
+        h1 {
+            color: #333;
+            margin-bottom: 10px;
+        }
+        .pdf-container {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            margin: 20px 0;
+        }
+        .download-link {
+            display: inline-block;
+            background: #007bff;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+        .download-link:hover {
+            background: #0056b3;
+        }
+        footer {
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+            color: #666;
+            font-size: 0.9em;
+        }
+        footer a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+        .footer_content {
+            background-color: #040404;
+            text-align: center;
+        }
+        footer p {
+            color: white;
+        }
+    </style>
 </head>
 <body>
-    <h1>Elo Public</h1>
-    <p>My first GitHub Pages site</p>
+    <header>
+        <h1>Elopar Public Content</h1>
+        <p>Technical documentation and wiring diagrams</p>
+    </header>
+    
+    <main>
+        <section>
+            <h2>• Injection Molding Office Wiring Diagram</h2>
+            <p>View the complete wiring diagram for the injection molding office system.</p>
+            <h2>Alternative Access</h2>
+            <p>If the PDF doesn't display above:</p>
+            <ul>
+                <li><a href="public_wiring/wiring_injection_molding_office.pdf" target="_blank">Open in new tab</a></li>
+                <li><a href="public_wiring/wiring_injection_molding_office.pdf" download>Direct download</a></li>
+            </ul>
+            <div class="pdf-container">
+                <iframe src="public_wiring/wiring_injection_molding_office.pdf" 
+                        width="100%" 
+                        height="600px"
+                        title="Injection Molding Office Wiring Diagram">
+                </iframe>
+            </div>
+            
+            <p>
+                <a href="public_wiring/wiring_injection_molding_office.pdf" 
+                   class="download-link" 
+                   download>
+                   📥 Download PDF
+                </a>
+            </p>
+        </section>
+
+        <section>
+            <h2>• Injection Molding Cabinet 1 Wiring Diagram</h2>
+            <p>View the complete wiring diagram for the injection molding cabinet 1 system.</p>
+            <h2>Alternative Access</h2>
+            <p>If the PDF doesn't display above:</p>
+            <ul>
+                <li><a href="public_wiring/wiring_injection_molding_cabinet 1.pdf" target="_blank">Open in new tab</a></li>
+                <li><a href="public_wiring/wiring_injection_molding_cabinet 1.pdf" download>Direct download</a></li>
+            </ul>
+            <div class="pdf-container">
+                <iframe src="public_wiring/wiring_injection_molding_cabinet 1.pdf" 
+                        width="100%" 
+                        height="600px"
+                        title="Injection Molding Office Wiring Diagram">
+                </iframe>
+            </div>
+            
+            <p>
+                <a href="public_wiring/wiring_injection_molding_cabinet 1.pdf" 
+                   class="download-link" 
+                   download>
+                   📥 Download PDF
+                </a>
+            </p>
+        </section>
+        
+      
+    </main>
+    
+    <footer class="footer_content" style="text-align: center;">
+        <p>&copy; <span id="current-year"></span> Elopar Ltd. | Elopar Technical Documentation. All rights reserved.</p>
+        <!-- <p>&copy; <span id="current-year"></span> Last updated: January 2026 | Elopar Technical Documentation. All rights reserved.</p> -->
+        <p>For questions, contact via email: <a href="mailto:plamendimitrov@elopar.com.tr">plamendimitrov@elopar.com.tr</a>.</p>
+        
+        
+    </footer>
+
+    <script>
+    // Simple one-liner
+    document.getElementById('current-year').textContent = new Date().getFullYear();
+</script>
 </body>
 </html>
