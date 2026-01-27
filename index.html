@@ -64,7 +64,8 @@
                     }
                     return response.json();  
                 })
-                .then(data => console.log(data))  
+                .then(data => console.log(data))
+                .then(data => document.getElementById('cabinet0').textContent = data.data.cabinet0)
                 .catch(error => console.error('Failed to fetch data:', error)); 
         }
         fetchJSONData();  
@@ -79,7 +80,7 @@
         
         <section id="main-list" style="line-height: 1.6 !important;">
             <ul>
-                <li><a href="#" class="content-link" data-content="cabinet0">Electrical Panel - Injection Molding - Office</a></li>
+                <li><a id="cabinet0" href="#" class="content-link" data-content="cabinet0"></a></li>
                 <li><a style="color: red;" href="#" class="content-link" data-content="cabinet1">Electrical Panel - Injection Molding - Cabinet 1/Under Construction/</a></li>
                 <li><a href="#" class="content-link" data-content="cabinet2">Electrical Panel - Injection Molding - Cabinet 2</a></li>
                 <li><a style="color: red;"href="#" class="content-link" data-content="cabinet3">Electrical Panel - Injection Molding - Trimming/Under Construction/</a></li>
