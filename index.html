@@ -54,12 +54,29 @@
     </style>
 </head>
 <body>
+
+    <script>
+        function fetchJSONData() {
+            fetch('./data.json')
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error(`HTTP error! Status: ${response.status}`);
+                    }
+                    return response.json();  
+                })
+                .then(data => console.log(data))  
+                .catch(error => console.error('Failed to fetch data:', error)); 
+        }
+        fetchJSONData();  
+    </script>
     <header>
         <h3>ELOPAR BG - PUBLIC CONTENT</h3>
         <p>Technical documentation and wiring diagrams listed below:</p>
     </header>
     
     <main>
+
+        
         <section id="main-list" style="line-height: 1.6 !important;">
             <ul>
                 <li><a href="#" class="content-link" data-content="cabinet0">Electrical Panel - Injection Molding - Office</a></li>
@@ -170,6 +187,8 @@
         <p>&copy; <span id="current-year"></span> ELOPAR Ltd. | Technical Documentation | <span>Version: 2.0.1</span></p>
         <p>Contact: <a href="mailto:plamendimitrov@elopar.com.tr">plamendimitrov@elopar.com.tr</a></p>
     </footer>
+
+  
 
     <script>
         // Set current year
@@ -329,7 +348,7 @@
         
         // Add direct links to each content section
         document.addEventListener('DOMContentLoaded', function() {
-            const contentIds = ['cabinet0', 'cabinet1', 'cabinet2'];
+            const contentIds = ['cabinet0', 'cabinet1', 'cabinet2', 'cabinet3', 'cabinet4'];
             
             contentIds.forEach(id => {
                 const contentDiv = document.getElementById(id + '-content');
