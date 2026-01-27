@@ -39,10 +39,12 @@ html, body {
             display: inline-block;
             background: #007bff;
             color: white;
-            padding: 10px 20px;
+            padding: 8px 16px;
             text-decoration: none;
-            border-radius: 5px;
+            border-radius: 8px;
             margin-top: 10px;
+            font-family: inherit;
+            font-size: 16px;
         }
         .download-link:hover {
             background: #0056b3;

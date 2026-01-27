@@ -26,7 +26,7 @@
             background: #6c757d;
             color: white;
             text-decoration: none;
-            border-radius: 4px;
+            border-radius: 8px;
             font-weight: bold;
             cursor: pointer;
             border: none;
@@ -54,7 +54,7 @@
     </style>
 </head>
 <body>
-    <header>
+    <header style="background: #f5f5f5; padding: 20px; border-radius: 8px; margin: 20px;">
         <h3>ELOPAR BG PUBLIC CONTENT</h3>
         <p>Technical documentation and wiring diagrams listed below:</p>
     </header>
@@ -62,24 +62,23 @@
     <main>
         <section id="main-list">
             <ul>
-                <li><a href="#" class="content-link" onclick="showContent('cabinet0'); return false;">Electrical Panel - Injection Molding Office Wiring Diagram</a></li>
-                <li><a href="#" class="content-link" onclick="showContent('cabinet1'); return false;">Electrical Panel - Injection Molding Cabinet 1 Wiring Diagram</a></li>
-                <li><a href="#" class="content-link" onclick="showContent('cabinet2'); return false;">Electrical Panel - Injection Molding Cabinet 2 Wiring Diagram</a></li>
-        
+                <li><a href="#" class="content-link" data-content="cabinet0">Electrical Panel - Injection Molding Office Wiring Diagram</a></li>
+                <li><a href="#" class="content-link" data-content="cabinet1">Electrical Panel - Injection Molding Cabinet 1 Wiring Diagram</a></li>
+                <li><a href="#" class="content-link" data-content="cabinet2">Electrical Panel - Injection Molding Cabinet 2 Wiring Diagram</a></li>
             </ul>
         </section>
         
         <!-- Dynamic Content Areas -->
-
-         <div id="cabinet0-content" class="dynamic-content">
-            <button onclick="hideContent('cabinet0')" class="back-button">← Back to List</button>
-            <h1>Electrical Panel - Injection Molding Office</h1>
+        <div id="cabinet0-content" class="dynamic-content">
+            <button class="back-button">← Back to List</button>
+            <h2>Electrical Panel - Injection Molding Office</h2>
             <p><strong>Type:</strong> ET-4</p>
             <p><strong>Location:</strong> Injection Molding Office</p>
-            <p><strong>Last Updated:</strong> <span id="cabinet0-date"></span></p>
+            <p><strong>Last Updated:</strong> <span class="content-date">January 2024</span></p>
             
             <div class="pdf-container">
-                <iframe src="public_wiring/wiring_injection_molding_office.pdf" width="100%" height="500px"></iframe>
+                <iframe src="public_wiring/wiring_injection_molding_office.pdf" width="100%" height="500px" 
+                        title="Injection Molding Office Wiring Diagram"></iframe>
             </div>
             
             <div class="actions">
@@ -88,16 +87,16 @@
             </div>
         </div>
 
-
         <div id="cabinet1-content" class="dynamic-content">
-            <button onclick="hideContent('cabinet1')" class="back-button">← Back to List</button>
-            <h1>Electrical Panel - Injection Molding Cabinet 1</h1>
+            <button class="back-button">← Back to List</button>
+            <h2>Electrical Panel - Injection Molding Cabinet 1</h2>
             <p><strong>Type:</strong> ET-4</p>
             <p><strong>Location:</strong> Production Hall A</p>
-            <p><strong>Last Updated:</strong> <span id="cabinet1-date"></span></p>
+            <p><strong>Last Updated:</strong> <span class="content-date">January 2024</span></p>
             
             <div class="pdf-container">
-                <iframe src="public_wiring/cabinet1_diagram.pdf" width="100%" height="500px"></iframe>
+                <iframe src="public_wiring/cabinet1_diagram.pdf" width="100%" height="500px" 
+                        title="Cabinet 1 Wiring Diagram"></iframe>
             </div>
             
             <div class="actions">
@@ -106,20 +105,16 @@
             </div>
         </div>
 
-
-
-
-
-
-         <div id="cabinet2-content" class="dynamic-content">
-            <button onclick="hideContent('cabinet2')" class="back-button">← Back to List</button>
-            <h1>Electrical Panel - Injection Molding Cabinet 2</h1>
+        <div id="cabinet2-content" class="dynamic-content">
+            <button class="back-button">← Back to List</button>
+            <h2>Electrical Panel - Injection Molding Cabinet 2</h2>
             <p><strong>Type:</strong> ET-4</p>
             <p><strong>Location:</strong> Production Hall A</p>
-            <p><strong>Last Updated:</strong> <span id="cabinet2-date"></span></p>
+            <p><strong>Last Updated:</strong> <span class="content-date">January 2024</span></p>
             
             <div class="pdf-container">
-                <iframe src="public_wiring/wiring_injection_molding_cabinet_2.pdf" width="100%" height="500px"></iframe>
+                <iframe src="public_wiring/wiring_injection_molding_cabinet_2.pdf" width="100%" height="500px" 
+                        title="Cabinet 2 Wiring Diagram"></iframe>
             </div>
             
             <div class="actions">
@@ -127,40 +122,32 @@
                 <a href="public_wiring/wiring_injection_molding_cabinet_2.pdf" target="_blank" class="download-link">Open in New Tab</a>
             </div>
         </div>
-
-
-
-
-    
-
-
-
-
     </main>
     
     <footer class="footer_content">
         <p>&copy; <span id="current-year"></span> ELOPAR Ltd. | Technical Documentation | <span>Version: 2.0.1</span></p>
         <p>Contact: <a href="mailto:plamendimitrov@elopar.com.tr">plamendimitrov@elopar.com.tr</a></p>
-        
     </footer>
 
     <script>
         // Set current year
         document.getElementById('current-year').textContent = new Date().getFullYear();
         
-        // Set dynamic date for cabinet 1
+        // Set current dates for all content
         const today = new Date();
-        document.getElementById('cabinet1-date').textContent = today.toLocaleDateString('en-US', {
+        const formattedDate = today.toLocaleDateString('en-US', {
             year: 'numeric',
             month: 'long',
             day: 'numeric'
         });
         
-        // Show dynamic content
+        // Update all date spans
+        document.querySelectorAll('.content-date').forEach(span => {
+            span.textContent = formattedDate;
+        });
+        
+        // Main content management functions
         function showContent(contentId) {
-            // Prevent default link behavior
-            event.preventDefault();
-            
             // Hide main list
             document.getElementById('main-list').style.display = 'none';
             
@@ -170,62 +157,156 @@
             });
             
             // Show selected content
-            document.getElementById(contentId + '-content').classList.add('active');
+            const contentElement = document.getElementById(contentId + '-content');
+            if (contentElement) {
+                contentElement.classList.add('active');
+                
+                // Scroll to the content
+                setTimeout(() => {
+                    contentElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }, 100);
+            }
             
-            // Update browser history
-            history.pushState({page: contentId}, '', `#${contentId}`);
+            // Update URL hash (for direct links)
+            if (history.pushState) {
+                history.pushState({ content: contentId }, '', '#' + contentId);
+            } else {
+                window.location.hash = '#' + contentId;
+            }
             
-            return false; // Additional prevention
+            // Update page title
+            updatePageTitle(contentId);
         }
         
-        // Hide dynamic content
-        function hideContent(contentId) {
+        function hideContent() {
             // Show main list
             document.getElementById('main-list').style.display = 'block';
             
-            // Hide content
-            document.getElementById(contentId + '-content').classList.remove('active');
+            // Hide all dynamic content
+            document.querySelectorAll('.dynamic-content').forEach(el => {
+                el.classList.remove('active');
+            });
             
-            // Update browser history
-            history.pushState({page: 'main'}, '', '#');
+            // Update URL hash
+            if (history.replaceState) {
+                history.replaceState({ content: null }, '', window.location.pathname);
+            }
+            window.location.hash = '';
+            
+            // Restore page title
+            document.title = 'Elopar BG Public - Wiring Diagrams';
             
             // Scroll to top of list
-            document.getElementById('main-list').scrollIntoView({behavior: 'smooth'});
+            setTimeout(() => {
+                document.getElementById('main-list').scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }, 100);
         }
         
-        // Handle browser back button
-        window.addEventListener('popstate', function(event) {
-            if (event.state && event.state.page !== 'main') {
-                document.getElementById('main-list').style.display = 'none';
-                document.querySelectorAll('.dynamic-content').forEach(el => {
-                    el.classList.remove('active');
-                });
-                document.getElementById(event.state.page + '-content').classList.add('active');
-            } else {
-                document.getElementById('main-list').style.display = 'block';
-                document.querySelectorAll('.dynamic-content').forEach(el => {
-                    el.classList.remove('active');
-                });
+        function updatePageTitle(contentId) {
+            const contentMap = {
+                'cabinet0': 'Injection Molding Office Wiring Diagram',
+                'cabinet1': 'Injection Molding Cabinet 1 Wiring Diagram',
+                'cabinet2': 'Injection Molding Cabinet 2 Wiring Diagram'
+            };
+            
+            if (contentMap[contentId]) {
+                document.title = 'Elopar BG - ' + contentMap[contentId];
             }
-        });
+        }
         
-        // Load content from URL hash on page load
-        window.addEventListener('load', function() {
+        // Check URL hash on page load
+        function loadFromHash() {
+            const hash = window.location.hash.substring(1); // Remove #
+            const validHashes = ['cabinet0', 'cabinet1', 'cabinet2'];
+            
+            if (hash && validHashes.includes(hash)) {
+                // Small delay to ensure DOM is ready
+                setTimeout(() => {
+                    showContent(hash);
+                }, 100);
+                return true;
+            }
+            return false;
+        }
+        
+        // Handle hash changes
+        function handleHashChange() {
             const hash = window.location.hash.substring(1);
-            if (hash && (hash === 'cabinet1' || hash === 'cabinet3')) {
+            const validHashes = ['cabinet0', 'cabinet1', 'cabinet2'];
+            
+            if (hash && validHashes.includes(hash)) {
                 showContent(hash);
+            } else if (hash === '') {
+                hideContent();
             }
-        });
+        }
         
-        // Alternative: Use event listeners instead of inline onclick
+        // Initialize when page loads
         document.addEventListener('DOMContentLoaded', function() {
-            // Add event listeners to all dynamic links
+            // Add event listeners to content links
             document.querySelectorAll('.content-link').forEach(link => {
                 link.addEventListener('click', function(e) {
                     e.preventDefault();
-                    const contentId = this.getAttribute('onclick').match(/showContent\('(.+?)'\)/)[1];
+                    const contentId = this.getAttribute('data-content');
                     showContent(contentId);
                 });
+            });
+            
+            // Add event listeners to back buttons
+            document.querySelectorAll('.back-button').forEach(button => {
+                button.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    hideContent();
+                });
+            });
+            
+            // Initial load from hash
+            loadFromHash();
+            
+            // Listen for hash changes
+            window.addEventListener('hashchange', handleHashChange);
+            
+            // Handle browser back/forward buttons
+            window.addEventListener('popstate', function(event) {
+                setTimeout(handleHashChange, 10);
+            });
+        });
+        
+        // Also try to load from hash on window load (as backup)
+        window.addEventListener('load', function() {
+            // If content not loaded yet but hash exists, try again
+            if (window.location.hash && !document.querySelector('.dynamic-content.active')) {
+                setTimeout(loadFromHash, 200);
+            }
+        });
+        
+        // Optional: Generate direct links for sharing
+        function generateDirectLink(contentId) {
+            return window.location.origin + window.location.pathname + '#' + contentId;
+        }
+        
+        // Add direct links to each content section
+        document.addEventListener('DOMContentLoaded', function() {
+            const contentIds = ['cabinet0', 'cabinet1', 'cabinet2'];
+            
+            contentIds.forEach(id => {
+                const contentDiv = document.getElementById(id + '-content');
+                if (contentDiv) {
+                    const shareDiv = document.createElement('div');
+                    shareDiv.style.marginTop = '20px';
+                    shareDiv.style.padding = '10px';
+                    shareDiv.style.backgroundColor = '#e9ecef';
+                    shareDiv.style.borderRadius = '4px';
+                    shareDiv.innerHTML = `
+                        <p style="margin: 0; font-size: 14px; color: #666;">
+                            <strong>Direct link:</strong> 
+                            <a href="${generateDirectLink(id)}" style="color: #007bff; word-break: break-all;">
+                                ${generateDirectLink(id)}
+                            </a>
+                        </p>
+                    `;
+                    contentDiv.appendChild(shareDiv);
+                }
             });
         });
     </script>
