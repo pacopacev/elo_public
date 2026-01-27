@@ -54,14 +54,7 @@
     </style>
 </head>
 <body>
-    <script>
-    fetch('office_obay.html')
-        .then(response => response.text())
-        .then(html => {
-            document.getElementById('office-container').innerHTML = html;
-        });
-    </script>
-
+    
     <script>
         fetch('./data.json')
     .then(response => response.json())
@@ -82,7 +75,6 @@
     .catch(error => console.error('Error:', error));
     </script>
     <header>
-        <div id="embed-container"></div>
         <h3>ELOPAR BG - PUBLIC CONTENT</h3>
         <p>Technical documentation and wiring diagrams listed below:</p>
     </header>
@@ -101,8 +93,23 @@
         </section>
         
         <!-- Dynamic Content Areas -->
-         <div id="office-container"></div>
-     
+        <div id="cabinet0-content" class="dynamic-content">
+            <button class="back-button">← Back to List</button>
+            <h2>Electrical Panel - Injection Molding - Office</h2>
+            <p><strong>Type:</strong>  </p>
+            <p><strong>Location:</strong> Office</p>
+            <p><strong>Last Updated:</strong> <span class="content-date">January 2024</span></p>
+            
+            <div class="pdf-container">
+                <iframe src="public_wiring/wiring_injection_molding_office.pdf" width="100%" height="500px" 
+                        title="Injection Molding Office Wiring Diagram"></iframe>
+            </div>
+            
+            <div class="actions">
+                <a href="public_wiring/wiring_injection_molding_office.pdf" download class="download-link">Download PDF</a>
+                <a href="public_wiring/wiring_injection_molding_office.pdf" target="_blank" class="download-link">Open in New Tab</a>
+            </div>
+        </div>
 
         <div id="cabinet1-content" class="dynamic-content">
             <button class="back-button">← Back to List</button>
