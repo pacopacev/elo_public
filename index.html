@@ -55,6 +55,14 @@
 </head>
 <body>
     <script>
+    fetch('office_obay.html')
+        .then(response => response.text())
+        .then(html => {
+            document.getElementById('embed-container').innerHTML = html;
+        });
+</script>
+
+    <script>
         fetch('./data.json')
     .then(response => response.json())
     .then(data => {
@@ -74,6 +82,7 @@
     .catch(error => console.error('Error:', error));
     </script>
     <header>
+        <div id="embed-container"></div>
         <h3>ELOPAR BG - PUBLIC CONTENT</h3>
         <p>Technical documentation and wiring diagrams listed below:</p>
     </header>
@@ -282,7 +291,7 @@
         // Check URL hash on page load
         function loadFromHash() {
             const hash = window.location.hash.substring(1); // Remove #
-            const validHashes = ['cabinet0', 'cabinet1', 'cabinet2'];
+            const validHashes = ['cabinet0', 'cabinet1', 'cabinet2', 'cabinet3', 'cabinet4'];
             
             if (hash && validHashes.includes(hash)) {
                 // Small delay to ensure DOM is ready
