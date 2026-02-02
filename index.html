@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Elopar BG Public Content</title>
+    <title>Elopar BG - Public Site</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" type="image/png" href="logo_light_test.png" sizes="32x32">
     <style>
@@ -77,7 +77,7 @@
     .catch(error => console.error('Error:', error));
     </script>
     <header>
-        <h3>ELOPAR BG - PUBLIC CONTENT</h3>
+        <h3>ELOPAR BG - PUBLIC SITE</h3>
         <p>Technical documentation and wiring diagrams listed below:</p>
     </header>
     
@@ -97,10 +97,10 @@
         <!-- Dynamic Content Areas -->
         <div id="cabinet0-content" class="dynamic-content">
             <button class="back-button">← Back to List</button>
-            <h2>Electrical Panel - Injection Molding - Office</h2>
+            <h2>Electrical Panel - Injection Molding - Obay Office</h2>
             <p><strong>Type:</strong>  </p>
-            <p><strong>Location:</strong> Office</p>
-            <p><strong>Last Updated:</strong> <span class="content-date">January 2024</span></p>
+            <p><strong>Location:</strong> Obay Office</p>
+            <p><strong>Last Updated:</strong> <span class="content-date">January 2026</span></p>
             
             <div class="pdf-container">
                 <iframe src="public_wiring/wiring_injection_molding_cabinet_3_trimming.pdf" width="100%" height="500px" 
@@ -133,10 +133,10 @@
 
         <div id="cabinet2-content" class="dynamic-content">
             <button class="back-button">← Back to List</button>
-            <h2>Electrical Panel - Injection Molding - Cabinet 2</h2>
+            <h2>Electrical Panel - Injection Molding - Main Area - Cabinet 2</h2>
             <p><strong>Type:</strong>      </p>
-            <p><strong>Location:</strong> Production Hall</p>
-            <p><strong>Last Updated:</strong> <span class="content-date">January 2024</span></p>
+            <p><strong>Location:</strong> Main Area</p>
+            <p><strong>Last Updated:</strong> <span class="content-date">January 2026</span></p>
             
             <div class="pdf-container">
                 <iframe src="public_wiring/wiring_injection_molding_cabinet_2.pdf" width="100%" height="500px" 
@@ -154,7 +154,7 @@
             <h2>Electrical Panel - Injection Molding - Trimming Area</h2>
             <p><strong>Type:</strong>      </p>
             <p><strong>Location:</strong> Trimming Area</p>
-            <p><strong>Last Updated:</strong> <span class="content-date">January 2024</span></p>
+            <p><strong>Last Updated:</strong> <span class="content-date">January 2026</span></p>
             
             <div class="pdf-container">
                 <iframe src="public_wiring/wiring_injection_molding_cabinet_3_trimming.pdf" width="100%" height="500px" 
@@ -272,10 +272,11 @@
         
         function updatePageTitle(contentId) {
             const contentMap = {
-                'cabinet0': 'Injection Molding Office Wiring Diagram',
-                'cabinet1': 'Injection Molding Cabinet 1 Wiring Diagram',
-                'cabinet2': 'Injection Molding Cabinet 2 Wiring Diagram',
-                'cabinet3': 'Injection Molding Trimming Area Wiring Diagram'
+                'cabinet0': 'Injection Molding Obay Office Wiring Diagram',
+                'cabinet1': 'Injection Molding Main Area Cabinet 1 Wiring Diagram',
+                'cabinet2': 'Injection Molding Main Area Cabinet 2 Wiring Diagram',
+                'cabinet3': 'Injection Molding Trimming Area Wiring Diagram',
+                'cabinet4': 'Injection Molding Material Warehouse Wiring Diagram'
             };
             
             if (contentMap[contentId]) {
